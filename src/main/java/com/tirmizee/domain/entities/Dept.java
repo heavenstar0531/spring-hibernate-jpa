@@ -1,4 +1,4 @@
-package com.tirmizee.entities;
+package com.tirmizee.domain.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -10,7 +10,7 @@ import lombok.Setter;
 
 @Entity
 public class Dept {
-	
+
 	@Setter @Getter 
 	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer deptno;
