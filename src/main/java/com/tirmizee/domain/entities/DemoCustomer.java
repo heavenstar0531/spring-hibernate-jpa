@@ -10,11 +10,10 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-public class DemoCustomers {
+public class DemoCustomer {
 	
 	@Setter @Getter
-	@SequenceGenerator(name="seqDemoCustomers", sequenceName="DEMO_CUST_SEQ", allocationSize = 1, initialValue = 1)
-	@Id @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="seqDemoCustomers")
+	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer customerId;
 	
 	@Setter @Getter
