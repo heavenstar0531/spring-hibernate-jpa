@@ -18,7 +18,7 @@ import lombok.Data;
 public class DemoProduct {
 	
 	@Id 
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "PRODUCT_ID")
 	private Long productId;
 	

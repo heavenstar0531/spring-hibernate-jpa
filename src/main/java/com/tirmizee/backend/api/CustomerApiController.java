@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.tirmizee.backend.dto.CustomerDTO;
+import com.tirmizee.core.mapper.CustomerMapper;
 import com.tirmizee.domain.entities.DemoCustomer;
 import com.tirmizee.domain.repository.DemoCustomerRepository;
 
@@ -51,22 +52,10 @@ public class CustomerApiController {
 	
 	@PostMapping(value = "/create")
 	public CustomerDTO create(@RequestBody CustomerDTO customerDTO) {
-		DemoCustomer entity = new DemoCustomer();
-		entity.setCustCity(customerDTO.getCustCity());
-		entity.setCustState(customerDTO.getCustState());
-		entity.setCustFirstName(customerDTO.getCustFirstName());
-		entity.setCustLastName(customerDTO.getCustLastName());
-		entity.setCreditLimit(customerDTO.getCreditLimit());
-		entity.setCustPostalCode(customerDTO.getCustPostalCode());
-		entity.setPhoneNumber1(customerDTO.getPhoneNumber1());
-		entity.setPhoneNumber2(customerDTO.getPhoneNumber2());
-		entity.setCustStreetAddress1(customerDTO.getCustStreetAddress1());
-		entity.setCustStreetAddress2(customerDTO.getCustStreetAddress2());
+		DemoCustomer entity = CustomerMapper.INSTANCE.toEntity(customerDTO);
 		entity = demoCustomerRepository.save(entity);
 		customerDTO.setCustomerId(entity.getCustomerId());
 		return customerDTO;
 	}
-	
-	
 	
 }

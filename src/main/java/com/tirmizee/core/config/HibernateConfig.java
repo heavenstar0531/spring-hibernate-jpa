@@ -6,6 +6,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @Configuration
 @EnableTransactionManagement
 public class HibernateConfig {
+	
 	/*
 	@Bean
 	public LocalSessionFactoryBean sessionFactory(DataSource dataSource) {

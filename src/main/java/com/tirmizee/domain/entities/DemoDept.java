@@ -7,7 +7,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-public class Dept {
+public class DemoDept {
 
 	@Id
 	@Setter @Getter 

@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.tirmizee.backend.dto.DeptDTO;
 import com.tirmizee.backend.dto.Response;
-import com.tirmizee.domain.entities.Dept;
+import com.tirmizee.domain.entities.DemoDept;
 import com.tirmizee.domain.repository.DeptRepository;
 
 @RestController
@@ -26,35 +26,33 @@ public class DeptApiControllor {
 	private DeptRepository deptRepository;
 	
 	@GetMapping(value = "/find/all")
-	public List<Dept> findAll() {
+	public List<DemoDept> findAll() {
 		return deptRepository.findAll();
 	}
 	
 	@GetMapping(value = "/find/sort")
-	public List<Dept> findAndSort() {
+	public List<DemoDept> findAndSort() {
 		return deptRepository.findAll(new Sort(Direction.DESC, "loc"));
 	}
 	
 	@GetMapping(value = "/findone/{id}")
-	public Dept findone(@PathVariable Integer id) {
+	public DemoDept findone(@PathVariable Integer id) {
 		return deptRepository.findOne(id);
 	}
 	
 	@GetMapping(value = "/getone/{id}")
-	public Dept getone(@PathVariable Integer id) {
+	public DemoDept getone(@PathVariable Integer id) {
 		return deptRepository.getOne(id);
 	}
 	
 	@PostMapping(value = "/create")
 	public Response<DeptDTO> create(@RequestBody DeptDTO deptDTO) {
 		Response<DeptDTO> response = new Response<>();
-		
-		Dept dept = new Dept();
+		DemoDept dept = new DemoDept();
 		dept.setDeptno(deptDTO.getDeptno());
 		dept.setDname(deptDTO.getDname());
 		dept.setLoc(deptDTO.getLoc());
 		deptRepository.save(dept);
-		
 		response.setMsgCode("200");
 		response.setMsgName("Success");
 		response.setDetail(deptDTO);
@@ -64,12 +62,10 @@ public class DeptApiControllor {
 	@PostMapping(value = "/update")
 	public Response<DeptDTO> update(@RequestBody DeptDTO deptDTO) {
 		Response<DeptDTO> response = new Response<>();
-		
-		Dept entity = deptRepository.findOne(deptDTO.getDeptno());
+		DemoDept entity = deptRepository.findOne(deptDTO.getDeptno());
 		entity.setDname(deptDTO.getDname());
 		entity.setLoc(deptDTO.getLoc());
 		deptRepository.save(entity);
-		
 		response.setMsgCode("200");
 		response.setMsgName("Success");
 		response.setDetail(deptDTO);
@@ -80,7 +76,6 @@ public class DeptApiControllor {
 	public Response<Object> delete(@PathVariable Integer deptno) {
 		Response<Object> response = new Response<>();
 		deptRepository.delete(deptno);
-		
 		response.setMsgCode("200");
 		response.setMsgName("Success");
 		return response;
