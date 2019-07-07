@@ -23,8 +23,8 @@ public class CustomerApiController {
 	private DemoCustomerRepository demoCustomerRepository;
 	
 	@GetMapping(value = "/find/all")
-	public List<DemoCustomer> findAll() {
-		return demoCustomerRepository.findAll();
+	public List<CustomerDTO> findAll() {
+		return CustomerMapper.INSTANCE.toListDTO(demoCustomerRepository.findAll());
 	}
 	
 	@GetMapping(value = "/delete/{customerId}")
@@ -36,26 +36,16 @@ public class CustomerApiController {
 	@PostMapping(value = "/update")
 	public CustomerDTO update(@RequestBody CustomerDTO customerDTO) {
 		DemoCustomer entity = demoCustomerRepository.findOne(customerDTO.getCustomerId());
-		entity.setCustCity(customerDTO.getCustCity());
-		entity.setCustState(customerDTO.getCustState());
-		entity.setCustFirstName(customerDTO.getCustFirstName());
-		entity.setCustLastName(customerDTO.getCustLastName());
-		entity.setCreditLimit(customerDTO.getCreditLimit());
-		entity.setCustPostalCode(customerDTO.getCustPostalCode());
-		entity.setPhoneNumber1(customerDTO.getPhoneNumber1());
-		entity.setPhoneNumber2(customerDTO.getPhoneNumber2());
-		entity.setCustStreetAddress1(customerDTO.getCustStreetAddress1());
-		entity.setCustStreetAddress2(customerDTO.getCustStreetAddress2());
+		entity = CustomerMapper.INSTANCE.toEntity(customerDTO);
 		entity = demoCustomerRepository.save(entity);
-		return customerDTO;
+		return CustomerMapper.INSTANCE.toDTO(entity);
 	}
 	
 	@PostMapping(value = "/create")
 	public CustomerDTO create(@RequestBody CustomerDTO customerDTO) {
 		DemoCustomer entity = CustomerMapper.INSTANCE.toEntity(customerDTO);
 		entity = demoCustomerRepository.save(entity);
-		customerDTO.setCustomerId(entity.getCustomerId());
-		return customerDTO;
+		return CustomerMapper.INSTANCE.toDTO(entity);
 	}
 	
 }

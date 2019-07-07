@@ -29,6 +29,4 @@ public class Response<T> implements Serializable {
 		this.detail = detail;
 	}
 	
-	
-	
 }

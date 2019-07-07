@@ -9,12 +9,12 @@ import lombok.Data;
 
 @Data
 @Entity
-public class DemoMembers {
+public class DemoMember {
 
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer memberId;
 	private String memberCode;
 	private String memberName;
-	private Integer userId;
+	private Integer recruitUserId;
 	
 }

@@ -13,7 +13,6 @@ import lombok.Data;
  * @author Pratya Yeekhaday
  *
  */
-
 @Data
 @Entity
 public class DemoOrderItems {
