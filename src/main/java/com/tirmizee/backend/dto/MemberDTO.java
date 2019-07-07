@@ -10,4 +10,7 @@ public class MemberDTO {
 	private String memberName;
 	private Integer recruitUserId;
 	
+	
+	private MemberDetailDTO memberDatail;
+	
 }

@@ -3,6 +3,7 @@ package com.tirmizee.domain.entities;
 import java.sql.Date;
 import java.sql.Timestamp;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -25,7 +26,7 @@ public class DemoMemberDetail {
 	private Date createDate;
 	private Timestamp updateDate;
 	
-	@OneToOne(mappedBy="memberDatail")
+	@OneToOne( mappedBy="memberDatail")
 	private DemoMember member;
 	
 }

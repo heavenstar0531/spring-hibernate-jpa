@@ -19,7 +19,7 @@ public class DemoMember {
 	private String memberCode;
 	private String memberName;
 	private Integer recruitUserId;
-	private Integer memberDetailId;
+	private Long memberDetailId;
 	
 	@OneToOne
 	@JoinColumn(name="memberDetailId", insertable=false, updatable=false)

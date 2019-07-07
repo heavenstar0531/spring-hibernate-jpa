@@ -3,15 +3,22 @@ package com.tirmizee.backend.api;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.tirmizee.backend.dto.MemberDTO;
+import com.tirmizee.backend.dto.Response;
+import com.tirmizee.core.mapper.MemberDetailMapper;
 import com.tirmizee.core.mapper.MemberMapper;
+import com.tirmizee.core.utilities.DateUtils;
 import com.tirmizee.domain.entities.DemoMember;
 import com.tirmizee.domain.entities.DemoMemberDetail;
+import com.tirmizee.domain.repository.DemoMemberDetailRepository;
 import com.tirmizee.domain.repository.DemoMembersRepository;
 
 @RestController
@@ -20,6 +27,8 @@ public class MemberApiController {
 
 	@Autowired
 	private DemoMembersRepository memberRepository;
+	@Autowired
+	private DemoMemberDetailRepository memberDetailRepository;
 	
 	@GetMapping(value = "/find/all")
 	public List<MemberDTO> findAll(){ 
@@ -29,16 +38,33 @@ public class MemberApiController {
 	@GetMapping(value = "/get/{memberId}")
 	public MemberDTO getMember(@PathVariable Integer memberId){ 
 		DemoMember entity = memberRepository.findOne(memberId);
-		DemoMemberDetail memberDetail = entity.getMemberDatail();
-		if (memberDetail != null) {
-			System.out.println(memberDetail.getId());
-			System.out.println(memberDetail.getFname());
-			System.out.println(memberDetail.getLname());
-			System.out.println(memberDetail.getEmail());
-			System.out.println(memberDetail.getCreateDate());
-			System.out.println(memberDetail.getUpdateDate());
-		}
 		return MemberMapper.INSTANCE.toDTO(entity);
 	}
+	
+	@Transactional
+	@GetMapping(value = "/delete/{memberId}")
+	public Response<Object> deleteMember(@PathVariable Integer memberId){
+		DemoMember memberPersist = memberRepository.findOne(memberId);
+		memberRepository.delete(memberPersist);
+		memberDetailRepository.delete(memberPersist.getMemberDetailId());
+		Response<Object> response = new Response<>();
+		response.setMsgCode("OK");
+		return response;
+	}
+	
+	@PostMapping(path = "/create")
+	public Response<MemberDTO> create(@RequestBody MemberDTO memberDTO) {
+		Response<MemberDTO> response = new Response<>();
+		DemoMember memberEntity = MemberMapper.INSTANCE.toEntity(memberDTO);
+		DemoMemberDetail memberDetailEntity = MemberDetailMapper.INSTANCE.toEntity(memberDTO.getMemberDatail());
+		memberDetailEntity.setUpdateDate(DateUtils.nowTimestamp());
+		memberDetailEntity = memberDetailRepository.save(memberDetailEntity);
+		memberEntity.setMemberDatail(memberDetailEntity);
+		memberEntity.setMemberDetailId(memberDetailEntity.getId());
+		memberEntity = memberRepository.save(memberEntity);
+		response.setMsgCode("OK");
+		response.setDetail(MemberMapper.INSTANCE.toDTO(memberEntity));
+		return response;
+	} 
 	
 }

@@ -27,7 +27,7 @@ public class DemoUser {
 	private Date expiresOn;
 	private Character adminUser;
 	
-	@OneToMany(mappedBy = "user")
+	@OneToMany( mappedBy = "user")
 	private List<DemoMember> members;
 
 }
