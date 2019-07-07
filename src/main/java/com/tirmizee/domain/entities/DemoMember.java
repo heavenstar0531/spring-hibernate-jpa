@@ -6,6 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 
 import lombok.Data;
 
@@ -18,6 +19,11 @@ public class DemoMember {
 	private String memberCode;
 	private String memberName;
 	private Integer recruitUserId;
+	private Integer memberDetailId;
+	
+	@OneToOne
+	@JoinColumn(name="memberDetailId", insertable=false, updatable=false)
+	private DemoMemberDetail memberDatail;
 	
 	@ManyToOne
 	@JoinColumn(name="recruitUserId", insertable=false, updatable=false)

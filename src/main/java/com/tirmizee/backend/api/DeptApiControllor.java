@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.tirmizee.backend.dto.DeptDTO;
 import com.tirmizee.backend.dto.Response;
+import com.tirmizee.core.mapper.DeptMapper;
 import com.tirmizee.domain.entities.DemoDept;
 import com.tirmizee.domain.repository.DeptRepository;
 
@@ -26,13 +27,14 @@ public class DeptApiControllor {
 	private DeptRepository deptRepository;
 	
 	@GetMapping(value = "/find/all")
-	public List<DemoDept> findAll() {
-		return deptRepository.findAll();
+	public List<DeptDTO> findAll() {
+		return DeptMapper.INSTANCE.toListDTO(deptRepository.findAll());
 	}
 	
 	@GetMapping(value = "/find/sort")
-	public List<DemoDept> findAndSort() {
-		return deptRepository.findAll(new Sort(Direction.DESC, "loc"));
+	public List<DeptDTO> findAndSort() {
+		List<DemoDept> entities = deptRepository.findAll(new Sort(Direction.DESC, "loc"));
+		return DeptMapper.INSTANCE.toListDTO(entities);
 	}
 	
 	@GetMapping(value = "/findone/{id}")
@@ -48,10 +50,7 @@ public class DeptApiControllor {
 	@PostMapping(value = "/create")
 	public Response<DeptDTO> create(@RequestBody DeptDTO deptDTO) {
 		Response<DeptDTO> response = new Response<>();
-		DemoDept dept = new DemoDept();
-		dept.setDeptno(deptDTO.getDeptno());
-		dept.setDname(deptDTO.getDname());
-		dept.setLoc(deptDTO.getLoc());
+		DemoDept dept = DeptMapper.INSTANCE.toEntity(deptDTO);
 		deptRepository.save(dept);
 		response.setMsgCode("200");
 		response.setMsgName("Success");
