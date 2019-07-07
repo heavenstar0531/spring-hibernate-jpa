@@ -6,16 +6,16 @@ import java.util.List;
  * @author Pratya Yeekhaday
  *
  * @param <D> Data Transfer Object
- * @param <T> Entity
+ * @param <E> Entity
  */
-public interface CommonMapper<D,T> {
+public interface CommonMapper<D,E> {
 	
-	D toDTO(T entity);
+	D toDTO(E entity);
 	
-	T toEntity(D dto);
+	E toEntity(D dto);
 	
-	List<D> toListDTO(List<T> entities);
+	List<D> toListDTO(List<E> entities);
 	
-	List<T> toListEntity(List<D> dtos);
+	List<E> toListEntity(List<D> dtos);
 	
 }

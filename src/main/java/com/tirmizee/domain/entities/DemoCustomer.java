@@ -1,9 +1,12 @@
 package com.tirmizee.domain.entities;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -47,5 +50,9 @@ public class DemoCustomer {
 	
 	@Setter @Getter
 	private String custEmail;
+	
+	@Setter @Getter
+	@OneToMany(mappedBy="customer")
+	private List<DemoOrder> orders;
 
 }

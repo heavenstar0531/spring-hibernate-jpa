@@ -1,5 +1,6 @@
 package com.tirmizee.domain.entities;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -19,10 +20,10 @@ public class DemoMember {
 	private String memberCode;
 	private String memberName;
 	private Integer recruitUserId;
-	private Long memberDetailId;
+//	private Long memberDetailId;
 	
-	@OneToOne
-	@JoinColumn(name="memberDetailId", insertable=false, updatable=false)
+	@OneToOne(cascade=CascadeType.ALL)
+	@JoinColumn(name="memberDetailId")
 	private DemoMemberDetail memberDatail;
 	
 	@ManyToOne

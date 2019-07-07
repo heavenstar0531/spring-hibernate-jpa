@@ -46,21 +46,21 @@ public class MemberApiController {
 	public Response<Object> deleteMember(@PathVariable Integer memberId){
 		DemoMember memberPersist = memberRepository.findOne(memberId);
 		memberRepository.delete(memberPersist);
-		memberDetailRepository.delete(memberPersist.getMemberDetailId());
+//		memberDetailRepository.delete(memberPersist.getMemberDetailId());
 		Response<Object> response = new Response<>();
 		response.setMsgCode("OK");
 		return response;
 	}
 	
+	@Transactional
 	@PostMapping(path = "/create")
 	public Response<MemberDTO> create(@RequestBody MemberDTO memberDTO) {
 		Response<MemberDTO> response = new Response<>();
 		DemoMember memberEntity = MemberMapper.INSTANCE.toEntity(memberDTO);
 		DemoMemberDetail memberDetailEntity = MemberDetailMapper.INSTANCE.toEntity(memberDTO.getMemberDatail());
 		memberDetailEntity.setUpdateDate(DateUtils.nowTimestamp());
-		memberDetailEntity = memberDetailRepository.save(memberDetailEntity);
+//		memberDetailEntity = memberDetailRepository.save(memberDetailEntity);
 		memberEntity.setMemberDatail(memberDetailEntity);
-		memberEntity.setMemberDetailId(memberDetailEntity.getId());
 		memberEntity = memberRepository.save(memberEntity);
 		response.setMsgCode("OK");
 		response.setDetail(MemberMapper.INSTANCE.toDTO(memberEntity));

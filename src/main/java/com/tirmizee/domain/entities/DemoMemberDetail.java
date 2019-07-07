@@ -9,6 +9,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 import lombok.Data;
@@ -18,7 +19,9 @@ import lombok.Data;
 @Table(name="DEMO_MEMBER_DETAIL")
 public class DemoMemberDetail {
 
-	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Id 
+	@SequenceGenerator(name="seqMemberDetail", sequenceName="DEMO_MEMBER_DETAIL_SEQ")
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="seqMemberDetail")
 	private Long id;
 	private String email;
 	private String fname;
@@ -26,7 +29,7 @@ public class DemoMemberDetail {
 	private Date createDate;
 	private Timestamp updateDate;
 	
-	@OneToOne( mappedBy="memberDatail")
+	@OneToOne( mappedBy="memberDatail", cascade=CascadeType.ALL)
 	private DemoMember member;
 	
 }

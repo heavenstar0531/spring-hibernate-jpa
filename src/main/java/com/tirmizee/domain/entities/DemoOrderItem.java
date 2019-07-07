@@ -15,7 +15,7 @@ import lombok.Data;
  */
 @Data
 @Entity
-public class DemoOrderItems {
+public class DemoOrderItem {
 
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer orderItemId;
