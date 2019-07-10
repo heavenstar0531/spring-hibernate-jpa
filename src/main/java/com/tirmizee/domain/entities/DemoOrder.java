@@ -3,6 +3,7 @@ package com.tirmizee.domain.entities;
 import java.math.BigDecimal;
 import java.sql.Date;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -26,24 +27,18 @@ public class DemoOrder {
 	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="seqOrder")
 	private Integer orderId;
 	
-	@Column(name="CUSTOMER_ID")
-	private Integer customerId;
-	
 	@Column(name="ORDER_TOTAL")
 	private BigDecimal orderTotal;
 	
 	@Column(name="ORDER_TIMESTAMP")
 	private Date orderTimestamp;
 	
-	@Column(name="USER_ID")
-	private Integer userId;
-	
-	@ManyToOne
-	@JoinColumn(name="CUSTOMER_ID", insertable=false, updatable=false)
+	@ManyToOne(cascade=CascadeType.ALL)
+	@JoinColumn(name="CUSTOMER_ID")
 	private DemoCustomer customer;
 	
-	@ManyToOne
-	@JoinColumn(name="USER_ID", insertable=false, updatable=false)
+	@ManyToOne(cascade=CascadeType.ALL)
+	@JoinColumn(name="USER_ID")
 	private DemoUser user;
 	
 }

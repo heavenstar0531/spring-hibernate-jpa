@@ -18,7 +18,6 @@ import com.tirmizee.core.mapper.MemberMapper;
 import com.tirmizee.core.utilities.DateUtils;
 import com.tirmizee.domain.entities.DemoMember;
 import com.tirmizee.domain.entities.DemoMemberDetail;
-import com.tirmizee.domain.repository.DemoMemberDetailRepository;
 import com.tirmizee.domain.repository.DemoMembersRepository;
 
 @RestController
@@ -27,8 +26,6 @@ public class MemberApiController {
 
 	@Autowired
 	private DemoMembersRepository memberRepository;
-	@Autowired
-	private DemoMemberDetailRepository memberDetailRepository;
 	
 	@GetMapping(value = "/find/all")
 	public List<MemberDTO> findAll(){ 
@@ -46,7 +43,6 @@ public class MemberApiController {
 	public Response<Object> deleteMember(@PathVariable Integer memberId){
 		DemoMember memberPersist = memberRepository.findOne(memberId);
 		memberRepository.delete(memberPersist);
-//		memberDetailRepository.delete(memberPersist.getMemberDetailId());
 		Response<Object> response = new Response<>();
 		response.setMsgCode("OK");
 		return response;
@@ -59,12 +55,23 @@ public class MemberApiController {
 		DemoMember memberEntity = MemberMapper.INSTANCE.toEntity(memberDTO);
 		DemoMemberDetail memberDetailEntity = MemberDetailMapper.INSTANCE.toEntity(memberDTO.getMemberDatail());
 		memberDetailEntity.setUpdateDate(DateUtils.nowTimestamp());
-//		memberDetailEntity = memberDetailRepository.save(memberDetailEntity);
 		memberEntity.setMemberDatail(memberDetailEntity);
 		memberEntity = memberRepository.save(memberEntity);
 		response.setMsgCode("OK");
 		response.setDetail(MemberMapper.INSTANCE.toDTO(memberEntity));
 		return response;
 	} 
+	
+	@GetMapping(value = "/code/{code}")
+	public MemberDTO getByMemberCode(@PathVariable String code){
+		DemoMember entity = memberRepository.findByMemberCode(code);
+		return MemberMapper.INSTANCE.toDTO(entity);
+	}
+	
+	@GetMapping(value = "/codes/{code}")
+	public List<MemberDTO> findByMemberCode(@PathVariable String code){
+		List<DemoMember> entities = memberRepository.findByMemberCodeContaining(code);
+		return MemberMapper.INSTANCE.toListDTO(entities);
+	}
 	
 }

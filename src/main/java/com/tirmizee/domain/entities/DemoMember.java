@@ -20,7 +20,6 @@ public class DemoMember {
 	private String memberCode;
 	private String memberName;
 	private Integer recruitUserId;
-//	private Long memberDetailId;
 	
 	@OneToOne(cascade=CascadeType.ALL)
 	@JoinColumn(name="memberDetailId")

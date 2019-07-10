@@ -48,4 +48,10 @@ public class CustomerApiController {
 		return CustomerMapper.INSTANCE.toDTO(entity);
 	}
 	
+	@GetMapping(value = "/email/{email}")
+	public List<CustomerDTO> findByEmail(@PathVariable String email){
+		List<DemoCustomer> entities = demoCustomerRepository.findByCustEmail(email);
+		return CustomerMapper.INSTANCE.toListDTO(entities);
+	}
+	
 }
