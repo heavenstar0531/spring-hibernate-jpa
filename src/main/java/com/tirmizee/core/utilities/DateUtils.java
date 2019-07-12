@@ -20,6 +20,11 @@ public final class DateUtils {
 		return Timestamp.valueOf(localDateNow);
 	}
 	
+	public static Timestamp nowTimestampPlusYear(int year){
+		LocalDateTime localDateNow = LocalDateTime.now().plusYears(year);
+		return Timestamp.valueOf(localDateNow);
+	}
+	
 	public static java.sql.Date now(){
 		return new java.sql.Date(new Date().getTime());
 	}

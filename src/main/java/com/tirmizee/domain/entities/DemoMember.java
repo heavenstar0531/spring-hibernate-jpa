@@ -1,5 +1,7 @@
 package com.tirmizee.domain.entities;
 
+import java.sql.Timestamp;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -20,6 +22,9 @@ public class DemoMember {
 	private String memberCode;
 	private String memberName;
 	private Integer recruitUserId;
+	private Integer score;
+	private Timestamp createDate;
+	private Boolean active;
 	
 	@OneToOne(cascade=CascadeType.ALL)
 	@JoinColumn(name="memberDetailId")
