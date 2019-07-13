@@ -1,16 +1,18 @@
-package com.tirmizee.domain.repository;
+package com.tirmizee.domain.repositories;
 
 import java.sql.Timestamp;
 import java.util.Collection;
 import java.util.List;
 
 import com.tirmizee.domain.entities.DemoMember;
+import com.tirmizee.domain.entities.DemoUser;
+import com.tirmizee.domain.repositories.custom.CustomDemoMemberRepository;
 
 /**
  * @author Pratya Yeekhaday
  *
  */
-public interface DemoMembersRepository extends ExtendedJpaRepository<DemoMember, Integer> {
+public interface DemoMemberRepository extends BaseRepository<DemoMember, Integer>, CustomDemoMemberRepository {
 	
 	DemoMember findByMemberCode(String memberCode);
 	
@@ -64,4 +66,8 @@ public interface DemoMembersRepository extends ExtendedJpaRepository<DemoMember,
 	
 	List<DemoMember> findByUserUserName(String username);
 	
+	List<DemoMember> findByMemberDatailEmailContaining(String email);
+	
+	List<DemoMember> findByUser(DemoUser user);
+
 }

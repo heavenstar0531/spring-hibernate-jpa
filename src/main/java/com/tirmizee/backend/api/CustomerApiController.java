@@ -13,44 +13,44 @@ import org.springframework.web.bind.annotation.RestController;
 import com.tirmizee.backend.dto.CustomerDTO;
 import com.tirmizee.core.mapper.CustomerMapper;
 import com.tirmizee.domain.entities.DemoCustomer;
-import com.tirmizee.domain.repository.DemoCustomerRepository;
+import com.tirmizee.domain.repositories.DemoCustomerRepository;
 
 @RestController
 @RequestMapping(path = "/custormer")
 public class CustomerApiController {
 
 	@Autowired
-	private DemoCustomerRepository demoCustomerRepository;
+	private DemoCustomerRepository customerRepository;
 	
 	@GetMapping(value = "/find/all")
 	public List<CustomerDTO> findAll() {
-		return CustomerMapper.INSTANCE.toListDTO(demoCustomerRepository.findAll());
+		return CustomerMapper.INSTANCE.toListDTO(customerRepository.findAll());
 	}
 	
 	@GetMapping(value = "/delete/{customerId}")
 	public CustomerDTO update(@PathVariable Integer customerId) {
-		demoCustomerRepository.delete(customerId);
+		customerRepository.delete(customerId);
 		return new CustomerDTO();
 	}
 	
 	@PostMapping(value = "/update")
 	public CustomerDTO update(@RequestBody CustomerDTO customerDTO) {
-		DemoCustomer entity = demoCustomerRepository.findOne(customerDTO.getCustomerId());
+		DemoCustomer entity = customerRepository.findOne(customerDTO.getCustomerId());
 		entity = CustomerMapper.INSTANCE.toEntity(customerDTO);
-		entity = demoCustomerRepository.save(entity);
+		entity = customerRepository.save(entity);
 		return CustomerMapper.INSTANCE.toDTO(entity);
 	}
 	
 	@PostMapping(value = "/create")
 	public CustomerDTO create(@RequestBody CustomerDTO customerDTO) {
 		DemoCustomer entity = CustomerMapper.INSTANCE.toEntity(customerDTO);
-		entity = demoCustomerRepository.save(entity);
+		entity = customerRepository.save(entity);
 		return CustomerMapper.INSTANCE.toDTO(entity);
 	}
 	
 	@GetMapping(value = "/email/{email}")
 	public List<CustomerDTO> findByEmail(@PathVariable String email){
-		List<DemoCustomer> entities = demoCustomerRepository.findByCustEmail(email);
+		List<DemoCustomer> entities = customerRepository.findByCustEmail(email);
 		return CustomerMapper.INSTANCE.toListDTO(entities);
 	}
 	

@@ -6,25 +6,41 @@ import java.util.Collection;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.domain.Sort.Direction;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.tirmizee.backend.dto.MemberDTO;
 import com.tirmizee.backend.dto.Response;
+import com.tirmizee.backend.dto.UserDTO;
+import com.tirmizee.core.mapper.MemberDetailMapper;
 import com.tirmizee.core.mapper.MemberMapper;
+import com.tirmizee.core.mapper.PageMapper;
+import com.tirmizee.core.mapper.UserMapper;
 import com.tirmizee.core.utilities.DateUtils;
 import com.tirmizee.domain.entities.DemoMember;
-import com.tirmizee.domain.repository.DemoMembersRepository;
+import com.tirmizee.domain.entities.DemoMemberDetail;
+import com.tirmizee.domain.entities.DemoUser;
+import com.tirmizee.domain.repositories.DemoMemberRepository;
 
 @RestController
 @RequestMapping(path = "/member")
 public class MemberApiController {
 
 	@Autowired
-	private DemoMembersRepository memberRepository;
+	private PageMapper mapper;
+	
+	@Autowired
+	private DemoMemberRepository memberRepository;
 	
 	@GetMapping(value = "/find/all")
 	public List<MemberDTO> findAll(){ 
@@ -47,7 +63,7 @@ public class MemberApiController {
 		return response;
 	}
 	
-	/*@Transactional
+	@Transactional
 	@PostMapping(path = "/create")
 	public Response<MemberDTO> create(@RequestBody MemberDTO memberDTO) {
 		Response<MemberDTO> response = new Response<>();
@@ -59,7 +75,7 @@ public class MemberApiController {
 		response.setMsgCode("OK");
 		response.setDetail(MemberMapper.INSTANCE.toDTO(memberEntity));
 		return response;
-	} */
+	} 
 	
 	@GetMapping(value = "/codeis/{code}")
 	public MemberDTO getByMemberCodeIs(@PathVariable String code){
@@ -187,6 +203,26 @@ public class MemberApiController {
 	@GetMapping(value = "/username/{username}")
 	public List<MemberDTO> findByDemoUserUserName(@PathVariable String username){
 		List<DemoMember> entities = memberRepository.findByUserUserName(username);
+		return MemberMapper.INSTANCE.toListDTO(entities);
+	}
+	
+	@GetMapping(value = "/email/{email}")
+	public List<MemberDTO> findByMemberDatailEmailContaining(@PathVariable String email){
+		List<DemoMember> entities = memberRepository.findByMemberDatailEmailContaining(email);
+		return MemberMapper.INSTANCE.toListDTO(entities);
+	}
+	
+	@GetMapping(value = "/page/{page}/{size}")
+	public Page<MemberDTO> findByMemberDatailEmailContaining(@PathVariable int page, @PathVariable int size){
+		Pageable pageable = new PageRequest(page, size);
+		Page<DemoMember> entities = memberRepository.findAll(pageable);
+		return mapper.map(entities, MemberDTO.class);
+	}
+	
+	@PostMapping(value = "/findbyuser")
+	public List<MemberDTO> findByUser(@RequestBody UserDTO userDTO){
+		DemoUser user = UserMapper.INSTANCE.toEntity(userDTO);
+		List<DemoMember> entities = memberRepository.findByUser(user);
 		return MemberMapper.INSTANCE.toListDTO(entities);
 	}
 	

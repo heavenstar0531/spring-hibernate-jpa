@@ -3,9 +3,6 @@ package com.tirmizee.backend.api;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -17,13 +14,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.tirmizee.backend.dto.DeptDTO;
-import com.tirmizee.backend.dto.MemberDTO;
 import com.tirmizee.backend.dto.Response;
 import com.tirmizee.core.mapper.DeptMapper;
-import com.tirmizee.core.mapper.MemberMapper;
 import com.tirmizee.domain.entities.DemoDept;
-import com.tirmizee.domain.entities.DemoMember;
-import com.tirmizee.domain.repository.DeptRepository;
+import com.tirmizee.domain.repositories.DeptRepository;
 
 @RestController
 @RequestMapping(path = "/dept")
@@ -86,12 +80,11 @@ public class DeptApiControllor {
 		return response;
 	}
 	
-	/*@GetMapping(value = "/page/{no}")
-	public Page<DeptDTO> page(@PathVariable String no){
-		Pageable pageable = new PageRequest(1, 2);
-		Page<DemoDept> entities = deptRepository.findByDnameContaining(no, pageable);
-		return DeptMapper.INSTANCE.toPageDTO(entities);
-	}*/
+	@GetMapping(value = "/dname/{dname}")
+	public List<DeptDTO> page(@PathVariable String dname){
+		List<DemoDept> entities = deptRepository.findByName(dname);
+		return DeptMapper.INSTANCE.toListDTO(entities);
+	}
 	
 	@ExceptionHandler(value = Exception.class)
 	public Response<?> handleException(Exception ex){

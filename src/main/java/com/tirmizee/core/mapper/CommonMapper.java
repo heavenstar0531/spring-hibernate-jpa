@@ -2,8 +2,6 @@ package com.tirmizee.core.mapper;
 
 import java.util.List;
 
-import org.springframework.data.domain.Page;
-
 /**
  * @author Pratya Yeekhaday
  *
@@ -19,9 +17,5 @@ public interface CommonMapper<D, E> {
 	List<D> toListDTO(List<E> entities);
 	
 	List<E> toListEntity(List<D> dtos);
-	
-	/*Page<D> toPageDTO(Page<E> entities);
-	
-	Page<E> toPageEntity(Page<D> dtos);*/
 	
 }
