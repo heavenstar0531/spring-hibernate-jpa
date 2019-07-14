@@ -3,6 +3,9 @@ package com.tirmizee.backend.api;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -15,7 +18,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.tirmizee.backend.dto.DeptDTO;
 import com.tirmizee.backend.dto.Response;
+import com.tirmizee.core.dao.DeptDao;
 import com.tirmizee.core.mapper.DeptMapper;
+import com.tirmizee.core.mapper.PageMapper;
 import com.tirmizee.domain.entities.DemoDept;
 import com.tirmizee.domain.repositories.DeptRepository;
 
@@ -24,7 +29,21 @@ import com.tirmizee.domain.repositories.DeptRepository;
 public class DeptApiControllor {
 
 	@Autowired
+	private PageMapper mapper;
+	
+	@Autowired
+	private DeptDao deptDao;
+	
+	@Autowired
 	private DeptRepository deptRepository;
+	
+	@ExceptionHandler(value = Exception.class)
+	public Response<?> handleException(Exception ex){
+		Response<DeptDTO> response = new Response<>();
+		response.setMsgCode("ERROR000");
+		response.setMsgName(ex.getMessage());
+		return response;
+	}
 	
 	@GetMapping(value = "/find/all")
 	public List<DeptDTO> findAll() {
@@ -81,17 +100,29 @@ public class DeptApiControllor {
 	}
 	
 	@GetMapping(value = "/dname/{dname}")
-	public List<DeptDTO> page(@PathVariable String dname){
+	public List<DeptDTO> dname(@PathVariable String dname){
 		List<DemoDept> entities = deptRepository.findByName(dname);
 		return DeptMapper.INSTANCE.toListDTO(entities);
 	}
 	
-	@ExceptionHandler(value = Exception.class)
-	public Response<?> handleException(Exception ex){
-		Response<DeptDTO> response = new Response<>();
-		response.setMsgCode("ERROR000");
-		response.setMsgName(ex.getMessage());
-		return response;
+	@GetMapping(value = "/loc/{loc}")
+	public List<DeptDTO> all(@PathVariable String loc){
+		List<DemoDept> entities = deptRepository.findByLoc(loc);
+		return DeptMapper.INSTANCE.toListDTO(entities);
 	}
+	
+	@GetMapping(value = "/page")
+	public Page<DeptDTO> page(){
+		Pageable pageable = new PageRequest(0, 2);
+		Page<DemoDept> entities = deptRepository.findAllWithPagination(pageable);
+		return mapper.map(entities, DeptDTO.class);
+	}
+	
+	@PostMapping(value = "/dao/criteria")
+	public List<DeptDTO> dao(@RequestBody DeptDTO deptDTO){
+		List<DemoDept> entities = deptDao.findByCriteria(deptDTO);
+		return DeptMapper.INSTANCE.toListDTO(entities);
+	}
+	
 	
 }

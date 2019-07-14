@@ -10,12 +10,12 @@ import java.util.List;
  */
 public interface CommonMapper<D, E> {
 	
-	D toDTO(E entity);
-	
 	E toEntity(D dto);
 	
-	List<D> toListDTO(List<E> entities);
+	D toDTO(E entity);
 	
 	List<E> toListEntity(List<D> dtos);
+	
+	List<D> toListDTO(List<E> entities);
 	
 }

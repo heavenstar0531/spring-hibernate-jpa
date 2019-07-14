@@ -10,7 +10,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
-import org.springframework.data.domain.Sort.Direction;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -224,6 +223,24 @@ public class MemberApiController {
 		DemoUser user = UserMapper.INSTANCE.toEntity(userDTO);
 		List<DemoMember> entities = memberRepository.findByUser(user);
 		return MemberMapper.INSTANCE.toListDTO(entities);
+	}
+	
+	@GetMapping(value = "/page/{code}")
+	public Page<MemberDTO> page(@PathVariable String code){
+		Pageable pageable = new PageRequest(0, 3);
+		Page<DemoMember> entities = memberRepository.findByMemberCodeContaining(code, pageable);
+		return mapper.map(entities, MemberDTO.class);
+	}
+	
+	@PostMapping(value = "/page")
+	public Page<MemberDTO> page(@RequestBody MemberDTO criteria){
+		Sort sort = new Sort(Sort.Direction.DESC, "memberCode");
+		Pageable pageable = new PageRequest(0, 3,sort);
+		Page<DemoMember> entities = memberRepository.findByMemberCodeContainingOrMemberNameContaining(
+			criteria.getMemberCode(),
+			criteria.getMemberName(), 
+			pageable);
+		return mapper.map(entities, MemberDTO.class);
 	}
 	
 }

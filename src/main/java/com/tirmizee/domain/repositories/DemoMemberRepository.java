@@ -4,15 +4,17 @@ import java.sql.Timestamp;
 import java.util.Collection;
 import java.util.List;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+
 import com.tirmizee.domain.entities.DemoMember;
 import com.tirmizee.domain.entities.DemoUser;
-import com.tirmizee.domain.repositories.custom.CustomDemoMemberRepository;
 
 /**
  * @author Pratya Yeekhaday
  *
  */
-public interface DemoMemberRepository extends BaseRepository<DemoMember, Integer>, CustomDemoMemberRepository {
+public interface DemoMemberRepository extends BaseRepository<DemoMember, Integer> {
 	
 	DemoMember findByMemberCode(String memberCode);
 	
@@ -69,5 +71,9 @@ public interface DemoMemberRepository extends BaseRepository<DemoMember, Integer
 	List<DemoMember> findByMemberDatailEmailContaining(String email);
 	
 	List<DemoMember> findByUser(DemoUser user);
+	
+	Page<DemoMember> findByMemberCodeContaining(String memberCode, Pageable pageable);
+	
+	Page<DemoMember> findByMemberCodeContainingOrMemberNameContaining(String memberCode, String memberName, Pageable pageable);
 
 }
