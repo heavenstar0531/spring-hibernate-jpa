@@ -4,7 +4,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
 import com.tirmizee.backend.dto.DeptDTO;
-import com.tirmizee.domain.entities.DemoDept;
+import com.tirmizee.jpa.entities.DemoDept;
 
 @Mapper
 public interface DeptMapper extends CommonMapper<DeptDTO, DemoDept> {

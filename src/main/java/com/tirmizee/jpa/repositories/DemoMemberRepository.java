@@ -1,4 +1,4 @@
-package com.tirmizee.domain.repositories;
+package com.tirmizee.jpa.repositories;
 
 import java.sql.Timestamp;
 import java.util.Collection;
@@ -7,8 +7,8 @@ import java.util.List;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
-import com.tirmizee.domain.entities.DemoMember;
-import com.tirmizee.domain.entities.DemoUser;
+import com.tirmizee.jpa.entities.DemoMember;
+import com.tirmizee.jpa.entities.DemoUser;
 
 /**
  * @author Pratya Yeekhaday

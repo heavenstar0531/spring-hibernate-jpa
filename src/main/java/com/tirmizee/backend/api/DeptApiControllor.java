@@ -18,11 +18,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.tirmizee.backend.dto.DeptDTO;
 import com.tirmizee.backend.dto.Response;
-import com.tirmizee.core.dao.DeptDao;
 import com.tirmizee.core.mapper.DeptMapper;
 import com.tirmizee.core.mapper.PageMapper;
-import com.tirmizee.domain.entities.DemoDept;
-import com.tirmizee.domain.repositories.DeptRepository;
+import com.tirmizee.dao.DeptDao;
+import com.tirmizee.jpa.entities.DemoDept;
+import com.tirmizee.jpa.repositories.DeptRepository;
 
 @RestController
 @RequestMapping(path = "/dept")
@@ -120,7 +120,7 @@ public class DeptApiControllor {
 	
 	@PostMapping(value = "/dao/criteria")
 	public List<DeptDTO> dao(@RequestBody DeptDTO deptDTO){
-		List<DemoDept> entities = deptDao.findByCriteria(deptDTO);
+		List<DemoDept> entities = deptDao.findByCriteriaQuery(deptDTO);
 		return DeptMapper.INSTANCE.toListDTO(entities);
 	}
 	

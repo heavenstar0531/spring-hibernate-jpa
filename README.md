@@ -15,4 +15,6 @@
 - https://www.baeldung.com/spring-data-jpa-query
 - https://www.baeldung.com/spring-data-composable-repositories
 - https://www.baeldung.com/spring-data-jpa-multiple-databases
+- https://www.baeldung.com/hibernate-dynamic-mapping
+- https://www.baeldung.com/spring-data-criteria-queries
 - https://quarkus.io/guides/hibernate-orm-guide

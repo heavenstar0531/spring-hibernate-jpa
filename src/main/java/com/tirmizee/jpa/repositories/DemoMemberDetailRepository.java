@@ -1,6 +1,6 @@
-package com.tirmizee.domain.repositories;
+package com.tirmizee.jpa.repositories;
 
-import com.tirmizee.domain.entities.DemoMemberDetail;
+import com.tirmizee.jpa.entities.DemoMemberDetail;
 
 public interface DemoMemberDetailRepository extends BaseRepository<DemoMemberDetail, Long> {
 

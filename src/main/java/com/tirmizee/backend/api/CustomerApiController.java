@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.tirmizee.backend.dto.CustomerDTO;
 import com.tirmizee.core.mapper.CustomerMapper;
-import com.tirmizee.domain.entities.DemoCustomer;
-import com.tirmizee.domain.repositories.DemoCustomerRepository;
+import com.tirmizee.jpa.entities.DemoCustomer;
+import com.tirmizee.jpa.repositories.DemoCustomerRepository;
 
 @RestController
 @RequestMapping(path = "/custormer")

@@ -26,10 +26,10 @@ import com.tirmizee.core.mapper.MemberMapper;
 import com.tirmizee.core.mapper.PageMapper;
 import com.tirmizee.core.mapper.UserMapper;
 import com.tirmizee.core.utilities.DateUtils;
-import com.tirmizee.domain.entities.DemoMember;
-import com.tirmizee.domain.entities.DemoMemberDetail;
-import com.tirmizee.domain.entities.DemoUser;
-import com.tirmizee.domain.repositories.DemoMemberRepository;
+import com.tirmizee.jpa.entities.DemoMember;
+import com.tirmizee.jpa.entities.DemoMemberDetail;
+import com.tirmizee.jpa.entities.DemoUser;
+import com.tirmizee.jpa.repositories.DemoMemberRepository;
 
 @RestController
 @RequestMapping(path = "/member")

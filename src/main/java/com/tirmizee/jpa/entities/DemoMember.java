@@ -1,4 +1,4 @@
-package com.tirmizee.domain.entities;
+package com.tirmizee.jpa.entities;
 
 import java.sql.Timestamp;
 

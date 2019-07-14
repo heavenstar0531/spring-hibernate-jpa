@@ -1,4 +1,4 @@
-package com.tirmizee.domain.repositories;
+package com.tirmizee.jpa.repositories;
 
 import java.util.List;
 import java.util.stream.Stream;
@@ -8,7 +8,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import com.tirmizee.domain.entities.DemoDept;
+import com.tirmizee.jpa.entities.DemoDept;
 
 @Repository
 public interface DeptRepository extends BaseRepository<DemoDept, Integer> {

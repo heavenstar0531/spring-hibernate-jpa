@@ -1,4 +1,4 @@
-package com.tirmizee.domain.repositories;
+package com.tirmizee.jpa.repositories;
 
 import java.io.Serializable;
 

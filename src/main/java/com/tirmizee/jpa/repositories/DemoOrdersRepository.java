@@ -1,6 +1,6 @@
-package com.tirmizee.domain.repositories;
+package com.tirmizee.jpa.repositories;
 
-import com.tirmizee.domain.entities.DemoOrder;
+import com.tirmizee.jpa.entities.DemoOrder;
 
 public interface DemoOrdersRepository extends BaseRepository<DemoOrder, Integer>{
 

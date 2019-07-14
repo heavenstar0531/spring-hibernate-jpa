@@ -5,9 +5,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.tirmizee.domain.entities.DemoMember;
-import com.tirmizee.domain.entities.DemoUser;
-import com.tirmizee.domain.repositories.DemoUserRepository;
+import com.tirmizee.jpa.entities.DemoMember;
+import com.tirmizee.jpa.entities.DemoUser;
+import com.tirmizee.jpa.repositories.DemoUserRepository;
 
 @RestController
 @RequestMapping(path = "/user")

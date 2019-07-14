@@ -4,7 +4,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
 import com.tirmizee.backend.dto.UserDTO;
-import com.tirmizee.domain.entities.DemoUser;
+import com.tirmizee.jpa.entities.DemoUser;
 
 @Mapper
 public interface UserMapper extends CommonMapper<UserDTO, DemoUser>{

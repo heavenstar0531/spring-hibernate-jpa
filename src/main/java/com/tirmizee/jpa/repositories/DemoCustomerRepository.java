@@ -1,10 +1,10 @@
-package com.tirmizee.domain.repositories;
+package com.tirmizee.jpa.repositories;
 
 import java.util.List;
 
 import org.springframework.data.jpa.repository.Query;
 
-import com.tirmizee.domain.entities.DemoCustomer;
+import com.tirmizee.jpa.entities.DemoCustomer;
 
 public interface DemoCustomerRepository extends BaseRepository<DemoCustomer,Integer>{
 
