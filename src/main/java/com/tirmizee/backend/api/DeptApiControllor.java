@@ -113,8 +113,9 @@ public class DeptApiControllor {
 	
 	@GetMapping(value = "/page")
 	public Page<DeptDTO> page(){
+//		Sort sort = new Sort(Sort.Direction.ASC, "deptno");
 		Pageable pageable = new PageRequest(0, 2);
-		Page<DemoDept> entities = deptRepository.findAllWithPagination(pageable);
+		Page<DemoDept> entities = deptRepository.findNativeWithPagination(pageable);
 		return mapper.map(entities, DeptDTO.class);
 	}
 	
@@ -123,6 +124,5 @@ public class DeptApiControllor {
 		List<DemoDept> entities = deptDao.findByCriteriaQuery(deptDTO);
 		return DeptMapper.INSTANCE.toListDTO(entities);
 	}
-	
 	
 }

@@ -10,6 +10,7 @@
 ## REF
 - https://stackoverflow.com/questions/4573975/jpa-vs-spring-jdbctemplate
 - https://stackoverflow.com/questions/17283431/data-was-not-saved-object-references-an-unsaved-transient-instance-save-the-t
+- https://www.journaldev.com/17379/jpa-entitymanager-hibernate
 - https://www.baeldung.com/hibernate-named-query
 - https://www.baeldung.com/spring-jpa-like-queries
 - https://www.baeldung.com/spring-data-jpa-query
@@ -18,3 +19,4 @@
 - https://www.baeldung.com/hibernate-dynamic-mapping
 - https://www.baeldung.com/spring-data-criteria-queries
 - https://quarkus.io/guides/hibernate-orm-guide
+- https://www.journaldev.com/3451/hibernate-named-query-example-namedquery

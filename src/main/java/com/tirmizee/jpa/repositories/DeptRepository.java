@@ -25,4 +25,10 @@ public interface DeptRepository extends BaseRepository<DemoDept, Integer> {
 	@Query(value = "SELECT d FROM DemoDept d ORDER BY d.deptno")
 	Page<DemoDept> findAllWithPagination(Pageable pageable);
 	
+	@Query(
+		nativeQuery = true,
+		value = " SELECT * FROM DEMO_DEPT ORDER BY ?#{#pageable}",
+		countQuery = "SELECT count(*) FROM DEMO_DEPT  ORDER BY ?#{#pageable}")
+	Page<DemoDept> findNativeWithPagination(Pageable pageable);
+	
 }
