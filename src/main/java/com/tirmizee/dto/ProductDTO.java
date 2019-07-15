@@ -1,4 +1,4 @@
-package com.tirmizee.backend.dto;
+package com.tirmizee.dto;
 
 import java.io.Serializable;
 import java.math.BigDecimal;

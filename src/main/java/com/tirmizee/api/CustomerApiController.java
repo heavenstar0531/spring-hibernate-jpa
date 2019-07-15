@@ -1,4 +1,4 @@
-package com.tirmizee.backend.api;
+package com.tirmizee.api;
 
 import java.util.List;
 
@@ -10,8 +10,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.tirmizee.backend.dto.CustomerDTO;
 import com.tirmizee.core.mapper.CustomerMapper;
+import com.tirmizee.dao.CustomerDao;
+import com.tirmizee.dto.CustomerDTO;
 import com.tirmizee.jpa.entities.DemoCustomer;
 import com.tirmizee.jpa.repositories.DemoCustomerRepository;
 
@@ -19,6 +20,9 @@ import com.tirmizee.jpa.repositories.DemoCustomerRepository;
 @RequestMapping(path = "/custormer")
 public class CustomerApiController {
 
+	@Autowired
+	private CustomerDao customerDao;
+	
 	@Autowired
 	private DemoCustomerRepository customerRepository;
 	
@@ -48,10 +52,16 @@ public class CustomerApiController {
 		return CustomerMapper.INSTANCE.toDTO(entity);
 	}
 	
-	@GetMapping(value = "/email/{email}")
-	public List<CustomerDTO> findByEmail(@PathVariable String email){
-		List<DemoCustomer> entities = customerRepository.findByCustEmail(email);
+	@GetMapping(value = "/hql/all")
+	public List<CustomerDTO> hqlAll() {
+		List<DemoCustomer> entities = customerRepository.allCustomerHql();
 		return CustomerMapper.INSTANCE.toListDTO(entities);
+	}
+	
+	@GetMapping(value = "/sql/all")
+	public List<CustomerDTO> sqlAll() {
+		List<DemoCustomer> entities = customerRepository.allCustomerSql();
+		return  CustomerMapper.INSTANCE.toListDTO(entities);
 	}
 	
 }

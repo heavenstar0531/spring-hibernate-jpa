@@ -42,7 +42,7 @@ public interface DemoMemberRepository extends BaseRepository<DemoMember, Integer
 	
 	List<DemoMember> findByMemberNameLike(String memberName);
 	
-	List<DemoMember> findByMemberNameIgnoreCase(String memberName);
+	List<DemoMember> findByMemberNameIgnoreCase(String  memberName);
 	
 	List<DemoMember> findByMemberCodeNot(String memberCode);
 	

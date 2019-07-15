@@ -1,4 +1,4 @@
-package com.tirmizee.backend.api;
+package com.tirmizee.api;
 
 import java.util.List;
 
@@ -16,11 +16,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.tirmizee.backend.dto.DeptDTO;
-import com.tirmizee.backend.dto.Response;
 import com.tirmizee.core.mapper.DeptMapper;
 import com.tirmizee.core.mapper.PageMapper;
 import com.tirmizee.dao.DeptDao;
+import com.tirmizee.dto.DeptDTO;
+import com.tirmizee.dto.Response;
 import com.tirmizee.jpa.entities.DemoDept;
 import com.tirmizee.jpa.repositories.DeptRepository;
 

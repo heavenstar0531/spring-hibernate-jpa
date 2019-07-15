@@ -1,4 +1,4 @@
-package com.tirmizee.backend.dto;
+package com.tirmizee.dto;
 
 import java.sql.Timestamp;
 

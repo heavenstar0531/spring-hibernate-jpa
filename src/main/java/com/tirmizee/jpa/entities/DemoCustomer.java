@@ -46,7 +46,7 @@ public class DemoCustomer {
 	private String phoneNumber2;
 	
 	@Setter @Getter
-	private Integer creditLimit;
+	private Double creditLimit;
 	
 	@Setter @Getter
 	private String custEmail;

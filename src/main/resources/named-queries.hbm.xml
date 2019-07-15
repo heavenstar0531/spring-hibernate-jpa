@@ -2,5 +2,9 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 	"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-
+	<query name="HQL_ALL_CUSTOMER">FROM DemoCustomer</query>
+	<sql-query name="SQL_ALL_CUSTOMER">
+		<return alias="l" class="com.tirmizee.jpa.entities.DemoCustomer"/>
+		<![CDATA[SELECT * FROM DEMO_CUSTOMER]]>
+	</sql-query>
 </hibernate-mapping>

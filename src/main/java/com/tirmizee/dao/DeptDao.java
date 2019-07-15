@@ -2,7 +2,7 @@ package com.tirmizee.dao;
 
 import java.util.List;
 
-import com.tirmizee.backend.dto.DeptDTO;
+import com.tirmizee.dto.DeptDTO;
 import com.tirmizee.jpa.entities.DemoDept;
 
 public interface DeptDao {

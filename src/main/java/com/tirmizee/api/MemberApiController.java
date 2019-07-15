@@ -1,4 +1,4 @@
-package com.tirmizee.backend.api;
+package com.tirmizee.api;
 
 import java.sql.Timestamp;
 import java.util.Arrays;
@@ -18,14 +18,14 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.tirmizee.backend.dto.MemberDTO;
-import com.tirmizee.backend.dto.Response;
-import com.tirmizee.backend.dto.UserDTO;
 import com.tirmizee.core.mapper.MemberDetailMapper;
 import com.tirmizee.core.mapper.MemberMapper;
 import com.tirmizee.core.mapper.PageMapper;
 import com.tirmizee.core.mapper.UserMapper;
 import com.tirmizee.core.utilities.DateUtils;
+import com.tirmizee.dto.MemberDTO;
+import com.tirmizee.dto.Response;
+import com.tirmizee.dto.UserDTO;
 import com.tirmizee.jpa.entities.DemoMember;
 import com.tirmizee.jpa.entities.DemoMemberDetail;
 import com.tirmizee.jpa.entities.DemoUser;

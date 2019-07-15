@@ -1,4 +1,4 @@
-package com.tirmizee.backend.dto;
+package com.tirmizee.dto;
 
 import java.io.Serializable;
 
@@ -29,8 +29,8 @@ public class CustomerDTO implements Serializable {
 	
 	private String phoneNumber2;
 	
-	private Integer creditLimit;
+	private Double creditLimit;
 	
 	private String custEmail;
-	
+
 }

@@ -8,7 +8,10 @@ import com.tirmizee.jpa.entities.DemoCustomer;
 
 public interface DemoCustomerRepository extends BaseRepository<DemoCustomer,Integer>{
 
-	@Query("SELECT c FROM DemoCustomer c WHERE c.custEmail LIKE ?1")
-	List<DemoCustomer> findByCustEmail(String custEmail);
+	@Query(name="HQL_ALL_CUSTOMER")
+	public List<DemoCustomer> allCustomerHql();
+	
+	@Query(name="SQL_ALL_CUSTOMER")
+	public List<DemoCustomer> allCustomerSql();
 	
 }

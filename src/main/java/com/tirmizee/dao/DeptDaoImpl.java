@@ -13,13 +13,12 @@ import javax.persistence.criteria.Root;
 
 import org.springframework.stereotype.Repository;
 
-import com.tirmizee.backend.dto.DeptDTO;
+import com.tirmizee.dto.DeptDTO;
 import com.tirmizee.jpa.entities.DemoDept;
 
 
 @Repository
-@SuppressWarnings("unchecked")
-public class DeptDaoImpl implements DeptDao {
+public class DeptDaoImpl extends AbstractBaseDao implements DeptDao {
 
 	@PersistenceContext
 	private EntityManager entityManager;
@@ -47,7 +46,7 @@ public class DeptDaoImpl implements DeptDao {
 			query.setParameter("DNAME", search.getDname());
 		}
 
-		return query.getResultList();
+		return getResultList(query);
 	}
 	
 	@Override

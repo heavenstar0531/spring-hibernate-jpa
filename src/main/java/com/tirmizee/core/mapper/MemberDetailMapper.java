@@ -3,7 +3,7 @@ package com.tirmizee.core.mapper;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
-import com.tirmizee.backend.dto.MemberDetailDTO;
+import com.tirmizee.dto.MemberDetailDTO;
 import com.tirmizee.jpa.entities.DemoMemberDetail;
 
 @Mapper
