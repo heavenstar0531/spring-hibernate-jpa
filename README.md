@@ -18,3 +18,4 @@
 - https://www.baeldung.com/spring-data-criteria-queries
 - https://quarkus.io/guides/hibernate-orm-guide
 - https://www.journaldev.com/3451/hibernate-named-query-example-namedquery
+- https://www.petrikainulainen.net/programming/spring-framework/spring-data-jpa-tutorial-creating-database-queries-with-named-queries/

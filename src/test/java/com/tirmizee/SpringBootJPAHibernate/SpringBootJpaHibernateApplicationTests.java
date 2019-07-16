@@ -11,7 +11,6 @@ public class SpringBootJpaHibernateApplicationTests {
 
 	@Test
 	public void contextLoads() {
-		
 	}
 
 }

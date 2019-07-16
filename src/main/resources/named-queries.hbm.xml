@@ -4,7 +4,11 @@
 <hibernate-mapping>
 	<query name="HQL_ALL_CUSTOMER">FROM DemoCustomer</query>
 	<sql-query name="SQL_ALL_CUSTOMER">
-		<return alias="l" class="com.tirmizee.jpa.entities.DemoCustomer"/>
+		<return alias="l" class="com.tirmizee.core.entities.DemoCustomer"/>
 		<![CDATA[SELECT * FROM DEMO_CUSTOMER]]>
+	</sql-query>
+	<sql-query name="SQL_ALL_CUSTOMER_BY_EMAIL">
+		<return alias="l" class="com.tirmizee.core.entities.DemoCustomer"/>
+		<![CDATA[SELECT * FROM DEMO_CUSTOMER WHERE CUST_EMAIL=:EMAIL]]>
 	</sql-query>
 </hibernate-mapping>
