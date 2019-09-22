@@ -18,4 +18,12 @@
 - https://www.baeldung.com/spring-data-criteria-queries
 - https://quarkus.io/guides/hibernate-orm-guide
 - https://www.journaldev.com/3451/hibernate-named-query-example-namedquery
+- https://docs.spring.io/spring-data/jpa/docs/1.6.0.RELEASE/reference/html/repository-query-keywords.html
 - https://www.petrikainulainen.net/programming/spring-framework/spring-data-jpa-tutorial-creating-database-queries-with-named-queries/
+- https://stackoverflow.com/questions/283608/using-regex-to-prefix-and-append-in-notepad
+- https://www.concretepage.com/spring-boot/spring-boot-tomcat-connection-pool
+- https://blog.indrek.io/articles/externalized-configuration-in-spring-boot/
+- https://www.technicalkeeda.com/spring-tutorials/how-to-keep-sql-queries-outside-java-code-using-spring
+- https://github.com/brettwooldridge/HikariCP/wiki/About-Pool-Sizing
+- http://www.masterspringboot.com/configuration/web-server/configuring-tomcat-connection-pool-on-spring-boot
+- https://stackoverflow.com/questions/54126131/server-tomcat-max-threads-vs-corepoolsize-vs-spring-datasource-tomcat-max

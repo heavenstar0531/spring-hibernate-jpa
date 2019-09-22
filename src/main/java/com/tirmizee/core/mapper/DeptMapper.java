@@ -7,7 +7,7 @@ import com.tirmizee.backend.dto.DeptDTO;
 import com.tirmizee.core.entities.DemoDept;
 
 @Mapper
-public interface DeptMapper extends CommonMapper<DeptDTO, DemoDept> {
+public interface DeptMapper extends GenericMapper<DeptDTO, DemoDept> {
 	
 	static final DeptMapper INSTANCE = Mappers.getMapper(DeptMapper.class);
 	

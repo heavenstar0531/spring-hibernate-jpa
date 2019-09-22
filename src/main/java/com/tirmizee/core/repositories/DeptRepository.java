@@ -11,7 +11,7 @@ import org.springframework.stereotype.Repository;
 import com.tirmizee.core.entities.DemoDept;
 
 @Repository
-public interface DeptRepository extends BaseRepository<DemoDept, Integer> {
+public interface DeptRepository extends BaseRepository<DemoDept, Integer>, CustomDemoDeptRepository {
 
 	@Query("FROM DemoDept")
 	Stream<DemoDept> findAllAsStream();

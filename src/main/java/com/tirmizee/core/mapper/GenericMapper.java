@@ -8,7 +8,7 @@ import java.util.List;
  * @param <D> Data Transfer Object
  * @param <E> Entity
  */
-public interface CommonMapper<D, E> {
+public interface GenericMapper<D, E> {
 	
 	E toEntity(D dto);
 	

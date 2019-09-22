@@ -7,7 +7,7 @@ import com.tirmizee.backend.dto.MemberDTO;
 import com.tirmizee.core.entities.DemoMember;
 
 @Mapper
-public interface MemberMapper extends CommonMapper<MemberDTO, DemoMember> {
+public interface MemberMapper extends GenericMapper<MemberDTO, DemoMember> {
 	
 	static final MemberMapper INSTANCE = Mappers.getMapper(MemberMapper.class);
 

@@ -11,6 +11,7 @@ import org.springframework.stereotype.Repository;
 
 import com.tirmizee.core.entities.DemoCustomer;
 import com.tirmizee.core.entities.DemoMember;
+import com.tirmizee.core.entities.DemoUser;
 
 @Repository
 public class ProcedureDaoImpl implements ProcedureDao {
@@ -28,22 +29,24 @@ public class ProcedureDaoImpl implements ProcedureDao {
 		jdbcTemplate.setResultsMapCaseInsensitive(true);
 		SimpleJdbcCall callStored = new SimpleJdbcCall(jdbcTemplate)
 			.withProcedureName("STORED_ALL_CUSTOMER")
+			.returningResultSet("users", BeanPropertyRowMapper.newInstance(DemoUser.class))
 			.returningResultSet("members", BeanPropertyRowMapper.newInstance(DemoMember.class))
 			.returningResultSet("customers", BeanPropertyRowMapper.newInstance(DemoCustomer.class));
-//		return callStored.execute(new HashMap<String, Object>(0));
 		return callStored.execute(new MapSqlParameterSource());
 	}
 
 	@Override
 	public Map<String, Object> callStoredProcedureAllCustomerAndMemberWithParameter(Integer customerId, String memberCode) {
+		
 		jdbcTemplate.setResultsMapCaseInsensitive(true);
 		
 		MapSqlParameterSource parameterSource = new MapSqlParameterSource()
 			.addValue("cusId", customerId)
 			.addValue("MemCode", memberCode);
-	
+		
 		SimpleJdbcCall callStored = new SimpleJdbcCall(jdbcTemplate)
 			.withProcedureName("ALL_CUSTOMER_AND_MEMBER")
+			.returningResultSet("users", BeanPropertyRowMapper.newInstance(DemoUser.class))
 			.returningResultSet("members", BeanPropertyRowMapper.newInstance(DemoMember.class))
 			.returningResultSet("customers", BeanPropertyRowMapper.newInstance(DemoCustomer.class));
 		

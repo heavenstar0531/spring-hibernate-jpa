@@ -1,6 +1,10 @@
 package com.tirmizee.core.config;
 
+import java.util.Map;
+
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 @Configuration
 public class RepositoryConfig {
@@ -25,5 +29,16 @@ public class RepositoryConfig {
 		transactionManager.setSessionFactory(sessionFactory.getObject());
 		return transactionManager;
 	}	*/
+	
+	
+	@Bean
+	@SuppressWarnings("unchecked")
+	public Map<String, String> springQuery(){
+		Map<String, String> map = null;
+		try (ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath:spring-map-query.xml")) {
+			map = (Map<String, String>) context.getBean("someId");
+		}
+		return map;
+	}
 	
 }

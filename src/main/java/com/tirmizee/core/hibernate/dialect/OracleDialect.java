@@ -11,4 +11,10 @@ public class OracleDialect extends Oracle9iDialect {
 		registerColumnType(Types.DECIMAL, "number($p,$s)");*/
 	}
 	
+	
+	@Override
+	public boolean bindLimitParametersInReverseOrder() {
+		// TODO Auto-generated method stub
+		return super.bindLimitParametersInReverseOrder();
+	}
 }

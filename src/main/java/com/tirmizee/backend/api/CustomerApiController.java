@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.tirmizee.backend.dao.CustomerDaoImpl;
 import com.tirmizee.backend.dao.ProcedureDao;
 import com.tirmizee.backend.dao.StoredProcedureDao;
 import com.tirmizee.backend.dto.CustomerDTO;
@@ -27,6 +28,9 @@ public class CustomerApiController {
 	private ProcedureDao procedureDao;
 	
 	@Autowired
+	private CustomerDaoImpl customerDaoImpl;
+	
+	@Autowired
 	private StoredProcedureDao storedProcedureDao;
 	
 	@Autowired
@@ -34,6 +38,7 @@ public class CustomerApiController {
 	
 	@GetMapping(value = "/find/all")
 	public List<CustomerDTO> findAll() {
+		customerDaoImpl.ssssssss();
 		return CustomerMapper.INSTANCE.toListDTO(customerRepository.findAll());
 	}
 	
@@ -57,16 +62,10 @@ public class CustomerApiController {
 		entity = customerRepository.save(entity);
 		return CustomerMapper.INSTANCE.toDTO(entity);
 	}
-	
-	@GetMapping(value = "/hql/all")
-	public List<CustomerDTO> hqlAll() {
-		List<DemoCustomer> entities = customerRepository.allCustomerHql();
-		return CustomerMapper.INSTANCE.toListDTO(entities);
-	}
-	
+
 	@GetMapping(value = "/sql/all")
 	public List<CustomerDTO> sqlAll() {
-		List<DemoCustomer> entities = customerRepository.allCustomerSql("zee_prta");
+		List<DemoCustomer> entities = customerRepository.findByCustEmail("zee_prta");
 		return  CustomerMapper.INSTANCE.toListDTO(entities);
 	}
 	
@@ -83,7 +82,6 @@ public class CustomerApiController {
 		}
 		map = procedureDao.callStoredProcedureAllCustomerAndMemberWithParameter(2, "00008");
 		List<DemoCustomer> list3 =  (List<DemoCustomer>) map.get("customers");
-		System.out.println(list3.get(0).getCustomerId());
 		List<DemoMember>  list4 =  (List<DemoMember>) map.get("members");
 		System.out.println(list4.get(0).getMemberCode());
 		return null;
