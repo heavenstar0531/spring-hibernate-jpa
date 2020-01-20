@@ -2276,3 +2276,1057 @@ java.lang.ClassCastException: java.util.ArrayList cannot be cast to com.tirmizee
 2019-07-16 23:56:11.497  INFO 9996 --- [nio-8999-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
 2019-07-16 23:56:11.498  INFO 9996 --- [nio-8999-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
 2019-07-16 23:56:11.545  INFO 9996 --- [nio-8999-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 47 ms
+2020-01-20 21:10:51.754  INFO 4100 --- [           main] com.tirmizee.RunSpringBootHibernate      : Starting RunSpringBootHibernate on LAPTOP-LCVEMHB7 with PID 4100 (C:\Users\Lenovo-User\eclipse-workspace\Spring-Boot-JPA-Hibernate\target\classes started by Lenovo-User in C:\Users\Lenovo-User\eclipse-workspace\Spring-Boot-JPA-Hibernate)
+2020-01-20 21:10:51.757  INFO 4100 --- [           main] com.tirmizee.RunSpringBootHibernate      : No active profile set, falling back to default profiles: default
+2020-01-20 21:10:51.797  INFO 4100 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e75aa0d: startup date [Mon Jan 20 21:10:51 ICT 2020]; root of context hierarchy
+2020-01-20 21:10:52.926  INFO 4100 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a51786ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-20 21:10:53.299  INFO 4100 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8999 (http)
+2020-01-20 21:10:53.355  INFO 4100 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-20 21:10:53.355  INFO 4100 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.40
+2020-01-20 21:10:53.458  INFO 4100 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-20 21:10:53.458  INFO 4100 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1661 ms
+2020-01-20 21:10:53.580  INFO 4100 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-01-20 21:10:53.582  INFO 4100 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2020-01-20 21:10:53.583  INFO 4100 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-01-20 21:10:53.584  INFO 4100 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-01-20 21:10:53.584  INFO 4100 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-01-20 21:10:53.584  INFO 4100 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-01-20 21:10:53.910 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : TirmizeePool - configuration:
+2020-01-20 21:10:53.913 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : allowPoolSuspension.............false
+2020-01-20 21:10:53.913 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : autoCommit......................true
+2020-01-20 21:10:53.913 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : catalog.........................null
+2020-01-20 21:10:53.913 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : connectionInitSql...............null
+2020-01-20 21:10:53.913 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : connectionTestQuery.............null
+2020-01-20 21:10:53.913 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : connectionTimeout...............30000
+2020-01-20 21:10:53.913 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : dataSource......................null
+2020-01-20 21:10:53.913 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : dataSourceClassName.............null
+2020-01-20 21:10:53.913 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : dataSourceJNDI..................null
+2020-01-20 21:10:53.914 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : dataSourceProperties............{password=<masked>}
+2020-01-20 21:10:53.914 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : driverClassName................."oracle.jdbc.OracleDriver"
+2020-01-20 21:10:53.914 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : healthCheckProperties...........{}
+2020-01-20 21:10:53.914 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : healthCheckRegistry.............null
+2020-01-20 21:10:53.914 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : idleTimeout.....................600000
+2020-01-20 21:10:53.914 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : initializationFailFast..........true
+2020-01-20 21:10:53.915 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : isolateInternalQueries..........false
+2020-01-20 21:10:53.915 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : jdbc4ConnectionTest.............false
+2020-01-20 21:10:53.915 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : jdbcUrl........................."jdbc:oracle:thin:@172.20.10.4:1521:xe"
+2020-01-20 21:10:53.915 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : leakDetectionThreshold..........0
+2020-01-20 21:10:53.915 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : maxLifetime.....................1800000
+2020-01-20 21:10:53.915 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : maximumPoolSize.................20
+2020-01-20 21:10:53.915 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : metricRegistry..................null
+2020-01-20 21:10:53.915 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : metricsTrackerFactory...........null
+2020-01-20 21:10:53.915 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : minimumIdle.....................10
+2020-01-20 21:10:53.915 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : password........................<masked>
+2020-01-20 21:10:53.915 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : poolName........................"TirmizeePool"
+2020-01-20 21:10:53.915 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : readOnly........................false
+2020-01-20 21:10:53.915 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : registerMbeans..................false
+2020-01-20 21:10:53.916 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : scheduledExecutorService........null
+2020-01-20 21:10:53.916 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : threadFactory...................null
+2020-01-20 21:10:53.916 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : transactionIsolation............null
+2020-01-20 21:10:53.916 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : username........................"ORGANIZATION"
+2020-01-20 21:10:53.916 DEBUG 4100 --- [           main] com.zaxxer.hikari.HikariConfig           : validationTimeout...............5000
+2020-01-20 21:10:53.916  INFO 4100 --- [           main] com.zaxxer.hikari.HikariDataSource       : TirmizeePool - Started.
+2020-01-20 21:10:56.740  WARN 4100 --- [           main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Unsatisfied dependency expressed through method 'entityManagerFactory' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'entityManagerFactoryBuilder' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Unsatisfied dependency expressed through method 'entityManagerFactoryBuilder' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaVendorAdapter' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.orm.jpa.JpaVendorAdapter]: Factory method 'jpaVendorAdapter' threw exception; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: ORA-01017: invalid username/password; logon denied
+
+2020-01-20 21:10:56.741  INFO 4100 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-01-20 21:10:56.759  INFO 4100 --- [           main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020-01-20 21:10:56.779 ERROR 4100 --- [           main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Unsatisfied dependency expressed through method 'entityManagerFactory' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'entityManagerFactoryBuilder' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Unsatisfied dependency expressed through method 'entityManagerFactoryBuilder' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaVendorAdapter' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.orm.jpa.JpaVendorAdapter]: Factory method 'jpaVendorAdapter' threw exception; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: ORA-01017: invalid username/password; logon denied
+
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1072)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:511)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1082)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:124)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.tirmizee.RunSpringBootHibernate.main(RunSpringBootHibernate.java:10)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'entityManagerFactoryBuilder' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Unsatisfied dependency expressed through method 'entityManagerFactoryBuilder' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaVendorAdapter' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.orm.jpa.JpaVendorAdapter]: Factory method 'jpaVendorAdapter' threw exception; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: ORA-01017: invalid username/password; logon denied
+
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:467)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1072)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:511)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1131)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1059)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaVendorAdapter' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.orm.jpa.JpaVendorAdapter]: Factory method 'jpaVendorAdapter' threw exception; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: ORA-01017: invalid username/password; logon denied
+
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1072)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:511)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1131)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1059)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 33 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.orm.jpa.JpaVendorAdapter]: Factory method 'jpaVendorAdapter' threw exception; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: ORA-01017: invalid username/password; logon denied
+
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 46 common frames omitted
+Caused by: com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: ORA-01017: invalid username/password; logon denied
+
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:512)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:105)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:94)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:326)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:366)
+	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:72)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:139)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:105)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$e9deacc.CGLIB$jpaVendorAdapter$4(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$e9deacc$$FastClassBySpringCGLIB$$c115d6e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration$$EnhancerBySpringCGLIB$$e9deacc.jpaVendorAdapter(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 47 common frames omitted
+Caused by: java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:441)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:436)
+	at oracle.jdbc.driver.T4CTTIfun.processError(T4CTTIfun.java:1027)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.processError(T4CTTIoauthenticate.java:551)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:537)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:255)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:500)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.doOAUTH(T4CTTIoauthenticate.java:1280)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:690)
+	at oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:782)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:39)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:704)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:95)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:101)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:341)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:506)
+	... 66 common frames omitted
+
+2020-01-20 21:11:20.914  INFO 14288 --- [           main] com.tirmizee.RunSpringBootHibernate      : Starting RunSpringBootHibernate on LAPTOP-LCVEMHB7 with PID 14288 (C:\Users\Lenovo-User\eclipse-workspace\Spring-Boot-JPA-Hibernate\target\classes started by Lenovo-User in C:\Users\Lenovo-User\eclipse-workspace\Spring-Boot-JPA-Hibernate)
+2020-01-20 21:11:20.916  INFO 14288 --- [           main] com.tirmizee.RunSpringBootHibernate      : No active profile set, falling back to default profiles: default
+2020-01-20 21:11:20.944  INFO 14288 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e75aa0d: startup date [Mon Jan 20 21:11:20 ICT 2020]; root of context hierarchy
+2020-01-20 21:11:21.677  INFO 14288 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a51786ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-20 21:11:22.337  INFO 14288 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8999 (http)
+2020-01-20 21:11:22.359  INFO 14288 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-20 21:11:22.359  INFO 14288 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.40
+2020-01-20 21:11:22.443  INFO 14288 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-20 21:11:22.443  INFO 14288 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1499 ms
+2020-01-20 21:11:22.558  INFO 14288 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-01-20 21:11:22.559  INFO 14288 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2020-01-20 21:11:22.561  INFO 14288 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-01-20 21:11:22.561  INFO 14288 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-01-20 21:11:22.561  INFO 14288 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-01-20 21:11:22.561  INFO 14288 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-01-20 21:11:22.735 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : TirmizeePool - configuration:
+2020-01-20 21:11:22.738 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : allowPoolSuspension.............false
+2020-01-20 21:11:22.738 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : autoCommit......................true
+2020-01-20 21:11:22.738 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : catalog.........................null
+2020-01-20 21:11:22.738 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : connectionInitSql...............null
+2020-01-20 21:11:22.738 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : connectionTestQuery.............null
+2020-01-20 21:11:22.738 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : connectionTimeout...............30000
+2020-01-20 21:11:22.738 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : dataSource......................null
+2020-01-20 21:11:22.738 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : dataSourceClassName.............null
+2020-01-20 21:11:22.738 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : dataSourceJNDI..................null
+2020-01-20 21:11:22.739 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : dataSourceProperties............{password=<masked>}
+2020-01-20 21:11:22.740 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : driverClassName................."oracle.jdbc.OracleDriver"
+2020-01-20 21:11:22.740 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : healthCheckProperties...........{}
+2020-01-20 21:11:22.740 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : healthCheckRegistry.............null
+2020-01-20 21:11:22.740 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : idleTimeout.....................600000
+2020-01-20 21:11:22.740 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : initializationFailFast..........true
+2020-01-20 21:11:22.740 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : isolateInternalQueries..........false
+2020-01-20 21:11:22.740 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : jdbc4ConnectionTest.............false
+2020-01-20 21:11:22.740 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : jdbcUrl........................."jdbc:oracle:thin:@172.20.10.4:1521:xe"
+2020-01-20 21:11:22.740 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : leakDetectionThreshold..........0
+2020-01-20 21:11:22.740 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : maxLifetime.....................1800000
+2020-01-20 21:11:22.740 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : maximumPoolSize.................20
+2020-01-20 21:11:22.740 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : metricRegistry..................null
+2020-01-20 21:11:22.740 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : metricsTrackerFactory...........null
+2020-01-20 21:11:22.740 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : minimumIdle.....................10
+2020-01-20 21:11:22.741 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : password........................<masked>
+2020-01-20 21:11:22.741 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : poolName........................"TirmizeePool"
+2020-01-20 21:11:22.741 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : readOnly........................false
+2020-01-20 21:11:22.741 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : registerMbeans..................false
+2020-01-20 21:11:22.741 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : scheduledExecutorService........null
+2020-01-20 21:11:22.741 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : threadFactory...................null
+2020-01-20 21:11:22.741 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : transactionIsolation............null
+2020-01-20 21:11:22.741 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : username........................"C##ORGANIZATION"
+2020-01-20 21:11:22.741 DEBUG 14288 --- [           main] com.zaxxer.hikari.HikariConfig           : validationTimeout...............5000
+2020-01-20 21:11:22.741  INFO 14288 --- [           main] com.zaxxer.hikari.HikariDataSource       : TirmizeePool - Started.
+2020-01-20 21:11:23.513 DEBUG 14288 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@c5dfbe
+2020-01-20 21:11:23.548 DEBUG 14288 --- [ool housekeeper] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Pool stats (total=1, active=0, idle=1, waiting=0)
+2020-01-20 21:11:23.577 DEBUG 14288 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@227dbc53
+2020-01-20 21:11:23.603 DEBUG 14288 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@6039d389
+2020-01-20 21:11:23.636 DEBUG 14288 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@11316698
+2020-01-20 21:11:23.669 DEBUG 14288 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@43bc99b
+2020-01-20 21:11:23.673  INFO 14288 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-01-20 21:11:23.699 DEBUG 14288 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@21393ac
+2020-01-20 21:11:23.729  INFO 14288 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-01-20 21:11:23.739 DEBUG 14288 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@5e041cea
+2020-01-20 21:11:23.769 DEBUG 14288 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@e807dd5
+2020-01-20 21:11:23.799 DEBUG 14288 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@1941f342
+2020-01-20 21:11:23.825 DEBUG 14288 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@602687b0
+2020-01-20 21:11:23.826 DEBUG 14288 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - After adding stats (total=10, active=0, idle=10, waiting=0)
+2020-01-20 21:11:23.903  INFO 14288 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-01-20 21:11:23.904  INFO 14288 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-01-20 21:11:23.905  INFO 14288 --- [           main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-01-20 21:11:23.962  INFO 14288 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-01-20 21:11:26.346  INFO 14288 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: com.tirmizee.core.hibernate.dialect.OracleDialect
+2020-01-20 21:11:27.021  WARN 14288 --- [           main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-01-20 21:11:27.024  WARN 14288 --- [           main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-01-20 21:11:27.253  INFO 14288 --- [           main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.tirmizee.core.entities.DemoProduct (class must be instantiated by Interceptor)
+2020-01-20 21:11:27.451  INFO 14288 --- [           main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-01-20 21:11:27.596  INFO 14288 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-20 21:11:27.672  INFO 14288 --- [           main] o.s.c.s.ClassPathXmlApplicationContext   : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@52b32b70: startup date [Mon Jan 20 21:11:27 ICT 2020]; root of context hierarchy
+2020-01-20 21:11:27.685  INFO 14288 --- [           main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [spring-map-query.xml]
+2020-01-20 21:11:27.760  INFO 14288 --- [           main] o.s.c.s.ClassPathXmlApplicationContext   : Closing org.springframework.context.support.ClassPathXmlApplicationContext@52b32b70: startup date [Mon Jan 20 21:11:27 ICT 2020]; root of context hierarchy
+2020-01-20 21:11:28.016  INFO 14288 --- [           main] org.dozer.config.GlobalSettings          : Trying to find Dozer configuration file: dozer.properties
+2020-01-20 21:11:28.032  WARN 14288 --- [           main] org.dozer.config.GlobalSettings          : Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2020-01-20 21:11:28.033  INFO 14288 --- [           main] org.dozer.DozerInitializer               : Initializing Dozer. Version: 5.5.0, Thread Name: main
+2020-01-20 21:11:28.035  INFO 14288 --- [           main] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2020-01-20 21:11:28.036  INFO 14288 --- [           main] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2020-01-20 21:11:28.037  INFO 14288 --- [           main] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-01-20 21:11:28.497  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e75aa0d: startup date [Mon Jan 20 21:11:20 ICT 2020]; root of context hierarchy
+2020-01-20 21:11:28.561  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/custormer/update],methods=[POST]}" onto public com.tirmizee.backend.dto.CustomerDTO com.tirmizee.backend.api.CustomerApiController.update(com.tirmizee.backend.dto.CustomerDTO)
+2020-01-20 21:11:28.561  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/custormer/delete/{customerId}],methods=[GET]}" onto public com.tirmizee.backend.dto.CustomerDTO com.tirmizee.backend.api.CustomerApiController.update(java.lang.Integer)
+2020-01-20 21:11:28.562  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/custormer/create],methods=[POST]}" onto public com.tirmizee.backend.dto.CustomerDTO com.tirmizee.backend.api.CustomerApiController.create(com.tirmizee.backend.dto.CustomerDTO)
+2020-01-20 21:11:28.562  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/custormer/test],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.CustomerDTO> com.tirmizee.backend.api.CustomerApiController.test()
+2020-01-20 21:11:28.562  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/custormer/find/all],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.CustomerDTO> com.tirmizee.backend.api.CustomerApiController.findAll()
+2020-01-20 21:11:28.562  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/custormer/sql/all],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.CustomerDTO> com.tirmizee.backend.api.CustomerApiController.sqlAll()
+2020-01-20 21:11:28.564  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/update],methods=[POST]}" onto public com.tirmizee.backend.dto.Response<com.tirmizee.backend.dto.DeptDTO> com.tirmizee.backend.api.DeptApiControllor.update(com.tirmizee.backend.dto.DeptDTO)
+2020-01-20 21:11:28.564  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/delete/{deptno}],methods=[GET]}" onto public com.tirmizee.backend.dto.Response<java.lang.Object> com.tirmizee.backend.api.DeptApiControllor.delete(java.lang.Integer)
+2020-01-20 21:11:28.564  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/create],methods=[POST]}" onto public com.tirmizee.backend.dto.Response<com.tirmizee.backend.dto.DeptDTO> com.tirmizee.backend.api.DeptApiControllor.create(com.tirmizee.backend.dto.DeptDTO)
+2020-01-20 21:11:28.565  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/loc/{loc}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.DeptDTO> com.tirmizee.backend.api.DeptApiControllor.all(java.lang.String)
+2020-01-20 21:11:28.565  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/find/all],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.DeptDTO> com.tirmizee.backend.api.DeptApiControllor.findAll()
+2020-01-20 21:11:28.565  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/page],methods=[GET]}" onto public org.springframework.data.domain.Page<com.tirmizee.backend.dto.DeptDTO> com.tirmizee.backend.api.DeptApiControllor.page()
+2020-01-20 21:11:28.565  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/find/sort],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.DeptDTO> com.tirmizee.backend.api.DeptApiControllor.findAndSort()
+2020-01-20 21:11:28.565  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/dao/criteria],methods=[POST]}" onto public java.util.List<com.tirmizee.backend.dto.DeptDTO> com.tirmizee.backend.api.DeptApiControllor.dao(com.tirmizee.backend.dto.DeptDTO)
+2020-01-20 21:11:28.565  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/findone/{id}],methods=[GET]}" onto public com.tirmizee.core.entities.DemoDept com.tirmizee.backend.api.DeptApiControllor.findone(java.lang.Integer)
+2020-01-20 21:11:28.566  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/dname/{dname}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.DeptDTO> com.tirmizee.backend.api.DeptApiControllor.dname(java.lang.String)
+2020-01-20 21:11:28.566  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/getone/{id}],methods=[GET]}" onto public com.tirmizee.core.entities.DemoDept com.tirmizee.backend.api.DeptApiControllor.getone(java.lang.Integer)
+2020-01-20 21:11:28.571  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/create],methods=[POST]}" onto public com.tirmizee.backend.dto.Response<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.create(com.tirmizee.backend.dto.MemberDTO)
+2020-01-20 21:11:28.571  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/get/{memberId}],methods=[GET]}" onto public com.tirmizee.backend.dto.MemberDTO com.tirmizee.backend.api.MemberApiController.getMember(java.lang.Integer)
+2020-01-20 21:11:28.571  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/find/all],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findAll()
+2020-01-20 21:11:28.571  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/namelike/{name}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberNameLike(java.lang.String)
+2020-01-20 21:11:28.572  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/createdate/between],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberNameLike()
+2020-01-20 21:11:28.572  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/scoreisnull],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByScoreIsNull()
+2020-01-20 21:11:28.572  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/scoregreater/{score}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByScoreGreaterThan(java.lang.Integer)
+2020-01-20 21:11:28.572  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/codeis/{code}],methods=[GET]}" onto public com.tirmizee.backend.dto.MemberDTO com.tirmizee.backend.api.MemberApiController.getByMemberCodeIs(java.lang.String)
+2020-01-20 21:11:28.572  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/nameendingwith/{name}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberNameEndingWith(java.lang.String)
+2020-01-20 21:11:28.572  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/codeandname/{code}/{name}],methods=[GET]}" onto public com.tirmizee.backend.dto.MemberDTO com.tirmizee.backend.api.MemberApiController.getByMemberCodeAndName(java.lang.String,java.lang.String)
+2020-01-20 21:11:28.573  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/codeequals/{code}],methods=[GET]}" onto public com.tirmizee.backend.dto.MemberDTO com.tirmizee.backend.api.MemberApiController.getByMemberCodeEquals(java.lang.String)
+2020-01-20 21:11:28.573  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/codeorname/{code}/{name}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberCodeOrName(java.lang.String,java.lang.String)
+2020-01-20 21:11:28.573  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/namestartingwith/{name}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberNameStartingWith(java.lang.String)
+2020-01-20 21:11:28.573  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/scoreisnotnull],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByScoreIsNotNull()
+2020-01-20 21:11:28.573  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/codenot/{code}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberCodeNot(java.lang.String)
+2020-01-20 21:11:28.573  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/scoreless/{score}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByScoreLessThan(java.lang.Integer)
+2020-01-20 21:11:28.574  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/activefalse],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByActiveFalse()
+2020-01-20 21:11:28.574  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/username/{username}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByDemoUserUserName(java.lang.String)
+2020-01-20 21:11:28.574  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/page/{code}],methods=[GET]}" onto public org.springframework.data.domain.Page<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.page(java.lang.String)
+2020-01-20 21:11:28.574  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/page],methods=[POST]}" onto public org.springframework.data.domain.Page<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.page(com.tirmizee.backend.dto.MemberDTO)
+2020-01-20 21:11:28.574  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/scorein],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByScoreIn()
+2020-01-20 21:11:28.574  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/activeture],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByActiveTrue()
+2020-01-20 21:11:28.575  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/code/{code}],methods=[GET]}" onto public com.tirmizee.backend.dto.MemberDTO com.tirmizee.backend.api.MemberApiController.getByMemberCode(java.lang.String)
+2020-01-20 21:11:28.575  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/delete/{memberId}],methods=[GET]}" onto public com.tirmizee.backend.dto.Response<java.lang.Object> com.tirmizee.backend.api.MemberApiController.deleteMember(java.lang.Integer)
+2020-01-20 21:11:28.575  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/codes/{code}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberCode(java.lang.String)
+2020-01-20 21:11:28.575  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/findbyuser],methods=[POST]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByUser(com.tirmizee.backend.dto.UserDTO)
+2020-01-20 21:11:28.575  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/codes/{code}/desc],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberCodeOrderByMemberCodeDesc(java.lang.String)
+2020-01-20 21:11:28.576  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/codesdesc/{code}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberCodeAndScoreIsNotNullOrderBy(java.lang.String)
+2020-01-20 21:11:28.576  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/email/{email}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberDatailEmailContaining(java.lang.String)
+2020-01-20 21:11:28.576  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/page/{page}/{size}],methods=[GET]}" onto public org.springframework.data.domain.Page<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberDatailEmailContaining(int,int)
+2020-01-20 21:11:28.576  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/test],methods=[GET]}" onto public java.lang.String com.tirmizee.backend.api.UserApiController.test()
+2020-01-20 21:11:28.577  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-01-20 21:11:28.577  INFO 14288 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-01-20 21:11:28.594  INFO 14288 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-20 21:11:28.595  INFO 14288 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-20 21:11:28.619  INFO 14288 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-20 21:11:28.762  INFO 14288 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-01-20 21:11:28.763  INFO 14288 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-01-20 21:11:28.766  INFO 14288 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-01-20 21:11:28.792  INFO 14288 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8999 (http)
+2020-01-20 21:11:28.794  INFO 14288 --- [           main] com.tirmizee.RunSpringBootHibernate      : Started RunSpringBootHibernate in 8.069 seconds (JVM running for 8.438)
+2020-01-20 21:11:53.575 DEBUG 14288 --- [ool housekeeper] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-01-20 21:12:23.577 DEBUG 14288 --- [ool housekeeper] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-01-20 21:12:53.579 DEBUG 14288 --- [ool housekeeper] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-01-20 21:13:10.601  INFO 3136 --- [           main] com.tirmizee.RunSpringBootHibernate      : Starting RunSpringBootHibernate on LAPTOP-LCVEMHB7 with PID 3136 (C:\Users\Lenovo-User\eclipse-workspace\Spring-Boot-JPA-Hibernate\target\classes started by Lenovo-User in C:\Users\Lenovo-User\eclipse-workspace\Spring-Boot-JPA-Hibernate)
+2020-01-20 21:13:10.603  INFO 3136 --- [           main] com.tirmizee.RunSpringBootHibernate      : No active profile set, falling back to default profiles: default
+2020-01-20 21:13:10.631  INFO 3136 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e75aa0d: startup date [Mon Jan 20 21:13:10 ICT 2020]; root of context hierarchy
+2020-01-20 21:13:11.389  INFO 3136 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bb9e5fc7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-20 21:13:12.051  INFO 3136 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8999 (http)
+2020-01-20 21:13:12.073  INFO 3136 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-20 21:13:12.074  INFO 3136 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.40
+2020-01-20 21:13:12.157  INFO 3136 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-20 21:13:12.158  INFO 3136 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1527 ms
+2020-01-20 21:13:12.269  INFO 3136 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-01-20 21:13:12.270  INFO 3136 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2020-01-20 21:13:12.272  INFO 3136 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-01-20 21:13:12.272  INFO 3136 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-01-20 21:13:12.272  INFO 3136 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-01-20 21:13:12.272  INFO 3136 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-01-20 21:13:12.450 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : TirmizeePool - configuration:
+2020-01-20 21:13:12.452 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : allowPoolSuspension.............false
+2020-01-20 21:13:12.452 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : autoCommit......................true
+2020-01-20 21:13:12.452 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : catalog.........................null
+2020-01-20 21:13:12.453 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : connectionInitSql...............null
+2020-01-20 21:13:12.453 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : connectionTestQuery.............null
+2020-01-20 21:13:12.453 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : connectionTimeout...............30000
+2020-01-20 21:13:12.453 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : dataSource......................null
+2020-01-20 21:13:12.453 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : dataSourceClassName.............null
+2020-01-20 21:13:12.453 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : dataSourceJNDI..................null
+2020-01-20 21:13:12.454 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : dataSourceProperties............{password=<masked>}
+2020-01-20 21:13:12.454 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : driverClassName................."oracle.jdbc.OracleDriver"
+2020-01-20 21:13:12.454 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : healthCheckProperties...........{}
+2020-01-20 21:13:12.454 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : healthCheckRegistry.............null
+2020-01-20 21:13:12.454 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : idleTimeout.....................600000
+2020-01-20 21:13:12.454 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : initializationFailFast..........true
+2020-01-20 21:13:12.454 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : isolateInternalQueries..........false
+2020-01-20 21:13:12.454 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : jdbc4ConnectionTest.............false
+2020-01-20 21:13:12.454 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : jdbcUrl........................."jdbc:oracle:thin:@172.20.10.4:1521:xe"
+2020-01-20 21:13:12.454 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : leakDetectionThreshold..........0
+2020-01-20 21:13:12.454 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : maxLifetime.....................1800000
+2020-01-20 21:13:12.455 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : maximumPoolSize.................20
+2020-01-20 21:13:12.455 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : metricRegistry..................null
+2020-01-20 21:13:12.455 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : metricsTrackerFactory...........null
+2020-01-20 21:13:12.455 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : minimumIdle.....................10
+2020-01-20 21:13:12.455 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : password........................<masked>
+2020-01-20 21:13:12.455 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : poolName........................"TirmizeePool"
+2020-01-20 21:13:12.455 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : readOnly........................false
+2020-01-20 21:13:12.455 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : registerMbeans..................false
+2020-01-20 21:13:12.455 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : scheduledExecutorService........null
+2020-01-20 21:13:12.455 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : threadFactory...................null
+2020-01-20 21:13:12.455 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : transactionIsolation............null
+2020-01-20 21:13:12.455 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : username........................"C##ORGANIZATION"
+2020-01-20 21:13:12.455 DEBUG 3136 --- [           main] com.zaxxer.hikari.HikariConfig           : validationTimeout...............5000
+2020-01-20 21:13:12.456  INFO 3136 --- [           main] com.zaxxer.hikari.HikariDataSource       : TirmizeePool - Started.
+2020-01-20 21:13:13.213 DEBUG 3136 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@7305f463
+2020-01-20 21:13:13.252 DEBUG 3136 --- [ool housekeeper] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Pool stats (total=1, active=0, idle=1, waiting=0)
+2020-01-20 21:13:13.278  INFO 3136 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-01-20 21:13:13.288 DEBUG 3136 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@3aa3d9f5
+2020-01-20 21:13:13.295  INFO 3136 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-01-20 21:13:13.322 DEBUG 3136 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@7e654866
+2020-01-20 21:13:13.350 DEBUG 3136 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@77a6a16e
+2020-01-20 21:13:13.356  INFO 3136 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-01-20 21:13:13.357  INFO 3136 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-01-20 21:13:13.358  INFO 3136 --- [           main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-01-20 21:13:13.381 DEBUG 3136 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@45a6cca9
+2020-01-20 21:13:13.396  INFO 3136 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-01-20 21:13:13.415 DEBUG 3136 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@13e7b00
+2020-01-20 21:13:13.445 DEBUG 3136 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@591da4c2
+2020-01-20 21:13:13.477 DEBUG 3136 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@3a03e16d
+2020-01-20 21:13:13.502 DEBUG 3136 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@16ef6358
+2020-01-20 21:13:13.526 DEBUG 3136 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@7dc3e00e
+2020-01-20 21:13:13.527 DEBUG 3136 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - After adding stats (total=10, active=0, idle=10, waiting=0)
+2020-01-20 21:13:14.675  INFO 3136 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: com.tirmizee.core.hibernate.dialect.OracleDialect
+2020-01-20 21:13:14.989  WARN 3136 --- [           main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-01-20 21:13:14.992  WARN 3136 --- [           main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-01-20 21:13:15.108  INFO 3136 --- [           main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.tirmizee.core.entities.DemoProduct (class must be instantiated by Interceptor)
+2020-01-20 21:13:15.238  INFO 3136 --- [           main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-01-20 21:13:15.347  INFO 3136 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-20 21:13:15.397  INFO 3136 --- [           main] o.s.c.s.ClassPathXmlApplicationContext   : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@145e958f: startup date [Mon Jan 20 21:13:15 ICT 2020]; root of context hierarchy
+2020-01-20 21:13:15.400  INFO 3136 --- [           main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [spring-map-query.xml]
+2020-01-20 21:13:15.443  INFO 3136 --- [           main] o.s.c.s.ClassPathXmlApplicationContext   : Closing org.springframework.context.support.ClassPathXmlApplicationContext@145e958f: startup date [Mon Jan 20 21:13:15 ICT 2020]; root of context hierarchy
+2020-01-20 21:13:15.656  INFO 3136 --- [           main] org.dozer.config.GlobalSettings          : Trying to find Dozer configuration file: dozer.properties
+2020-01-20 21:13:15.661  WARN 3136 --- [           main] org.dozer.config.GlobalSettings          : Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2020-01-20 21:13:15.662  INFO 3136 --- [           main] org.dozer.DozerInitializer               : Initializing Dozer. Version: 5.5.0, Thread Name: main
+2020-01-20 21:13:15.664  INFO 3136 --- [           main] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2020-01-20 21:13:15.665  INFO 3136 --- [           main] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2020-01-20 21:13:15.665  INFO 3136 --- [           main] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-01-20 21:13:16.087  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e75aa0d: startup date [Mon Jan 20 21:13:10 ICT 2020]; root of context hierarchy
+2020-01-20 21:13:16.140  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/custormer/update],methods=[POST]}" onto public com.tirmizee.backend.dto.CustomerDTO com.tirmizee.backend.api.CustomerApiController.update(com.tirmizee.backend.dto.CustomerDTO)
+2020-01-20 21:13:16.141  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/custormer/delete/{customerId}],methods=[GET]}" onto public com.tirmizee.backend.dto.CustomerDTO com.tirmizee.backend.api.CustomerApiController.update(java.lang.Integer)
+2020-01-20 21:13:16.141  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/custormer/create],methods=[POST]}" onto public com.tirmizee.backend.dto.CustomerDTO com.tirmizee.backend.api.CustomerApiController.create(com.tirmizee.backend.dto.CustomerDTO)
+2020-01-20 21:13:16.141  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/custormer/test],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.CustomerDTO> com.tirmizee.backend.api.CustomerApiController.test()
+2020-01-20 21:13:16.141  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/custormer/find/all],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.CustomerDTO> com.tirmizee.backend.api.CustomerApiController.findAll()
+2020-01-20 21:13:16.141  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/custormer/sql/all],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.CustomerDTO> com.tirmizee.backend.api.CustomerApiController.sqlAll()
+2020-01-20 21:13:16.143  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/update],methods=[POST]}" onto public com.tirmizee.backend.dto.Response<com.tirmizee.backend.dto.DeptDTO> com.tirmizee.backend.api.DeptApiControllor.update(com.tirmizee.backend.dto.DeptDTO)
+2020-01-20 21:13:16.143  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/delete/{deptno}],methods=[GET]}" onto public com.tirmizee.backend.dto.Response<java.lang.Object> com.tirmizee.backend.api.DeptApiControllor.delete(java.lang.Integer)
+2020-01-20 21:13:16.143  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/create],methods=[POST]}" onto public com.tirmizee.backend.dto.Response<com.tirmizee.backend.dto.DeptDTO> com.tirmizee.backend.api.DeptApiControllor.create(com.tirmizee.backend.dto.DeptDTO)
+2020-01-20 21:13:16.143  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/loc/{loc}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.DeptDTO> com.tirmizee.backend.api.DeptApiControllor.all(java.lang.String)
+2020-01-20 21:13:16.144  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/page],methods=[GET]}" onto public org.springframework.data.domain.Page<com.tirmizee.backend.dto.DeptDTO> com.tirmizee.backend.api.DeptApiControllor.page()
+2020-01-20 21:13:16.144  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/dao/criteria],methods=[POST]}" onto public java.util.List<com.tirmizee.backend.dto.DeptDTO> com.tirmizee.backend.api.DeptApiControllor.dao(com.tirmizee.backend.dto.DeptDTO)
+2020-01-20 21:13:16.144  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/dname/{dname}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.DeptDTO> com.tirmizee.backend.api.DeptApiControllor.dname(java.lang.String)
+2020-01-20 21:13:16.144  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/find/all],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.DeptDTO> com.tirmizee.backend.api.DeptApiControllor.findAll()
+2020-01-20 21:13:16.144  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/find/sort],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.DeptDTO> com.tirmizee.backend.api.DeptApiControllor.findAndSort()
+2020-01-20 21:13:16.144  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/findone/{id}],methods=[GET]}" onto public com.tirmizee.core.entities.DemoDept com.tirmizee.backend.api.DeptApiControllor.findone(java.lang.Integer)
+2020-01-20 21:13:16.144  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/getone/{id}],methods=[GET]}" onto public com.tirmizee.core.entities.DemoDept com.tirmizee.backend.api.DeptApiControllor.getone(java.lang.Integer)
+2020-01-20 21:13:16.150  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/create],methods=[POST]}" onto public com.tirmizee.backend.dto.Response<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.create(com.tirmizee.backend.dto.MemberDTO)
+2020-01-20 21:13:16.150  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/get/{memberId}],methods=[GET]}" onto public com.tirmizee.backend.dto.MemberDTO com.tirmizee.backend.api.MemberApiController.getMember(java.lang.Integer)
+2020-01-20 21:13:16.150  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/activefalse],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByActiveFalse()
+2020-01-20 21:13:16.150  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/scoreisnull],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByScoreIsNull()
+2020-01-20 21:13:16.150  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/nameendingwith/{name}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberNameEndingWith(java.lang.String)
+2020-01-20 21:13:16.150  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/scoreless/{score}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByScoreLessThan(java.lang.Integer)
+2020-01-20 21:13:16.150  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/createdate/between],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberNameLike()
+2020-01-20 21:13:16.151  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/namelike/{name}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberNameLike(java.lang.String)
+2020-01-20 21:13:16.151  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/namestartingwith/{name}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberNameStartingWith(java.lang.String)
+2020-01-20 21:13:16.151  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/codeequals/{code}],methods=[GET]}" onto public com.tirmizee.backend.dto.MemberDTO com.tirmizee.backend.api.MemberApiController.getByMemberCodeEquals(java.lang.String)
+2020-01-20 21:13:16.151  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/scoregreater/{score}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByScoreGreaterThan(java.lang.Integer)
+2020-01-20 21:13:16.151  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/codeandname/{code}/{name}],methods=[GET]}" onto public com.tirmizee.backend.dto.MemberDTO com.tirmizee.backend.api.MemberApiController.getByMemberCodeAndName(java.lang.String,java.lang.String)
+2020-01-20 21:13:16.151  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/username/{username}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByDemoUserUserName(java.lang.String)
+2020-01-20 21:13:16.151  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/codenot/{code}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberCodeNot(java.lang.String)
+2020-01-20 21:13:16.151  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/codeis/{code}],methods=[GET]}" onto public com.tirmizee.backend.dto.MemberDTO com.tirmizee.backend.api.MemberApiController.getByMemberCodeIs(java.lang.String)
+2020-01-20 21:13:16.152  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/codeorname/{code}/{name}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberCodeOrName(java.lang.String,java.lang.String)
+2020-01-20 21:13:16.152  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/scoreisnotnull],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByScoreIsNotNull()
+2020-01-20 21:13:16.152  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/page],methods=[POST]}" onto public org.springframework.data.domain.Page<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.page(com.tirmizee.backend.dto.MemberDTO)
+2020-01-20 21:13:16.152  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/page/{code}],methods=[GET]}" onto public org.springframework.data.domain.Page<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.page(java.lang.String)
+2020-01-20 21:13:16.152  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/codes/{code}/desc],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberCodeOrderByMemberCodeDesc(java.lang.String)
+2020-01-20 21:13:16.152  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/codesdesc/{code}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberCodeAndScoreIsNotNullOrderBy(java.lang.String)
+2020-01-20 21:13:16.152  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/page/{page}/{size}],methods=[GET]}" onto public org.springframework.data.domain.Page<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberDatailEmailContaining(int,int)
+2020-01-20 21:13:16.153  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/email/{email}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberDatailEmailContaining(java.lang.String)
+2020-01-20 21:13:16.153  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/code/{code}],methods=[GET]}" onto public com.tirmizee.backend.dto.MemberDTO com.tirmizee.backend.api.MemberApiController.getByMemberCode(java.lang.String)
+2020-01-20 21:13:16.153  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/delete/{memberId}],methods=[GET]}" onto public com.tirmizee.backend.dto.Response<java.lang.Object> com.tirmizee.backend.api.MemberApiController.deleteMember(java.lang.Integer)
+2020-01-20 21:13:16.153  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/findbyuser],methods=[POST]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByUser(com.tirmizee.backend.dto.UserDTO)
+2020-01-20 21:13:16.153  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/scorein],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByScoreIn()
+2020-01-20 21:13:16.153  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/activeture],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByActiveTrue()
+2020-01-20 21:13:16.153  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/codes/{code}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberCode(java.lang.String)
+2020-01-20 21:13:16.153  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/find/all],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findAll()
+2020-01-20 21:13:16.154  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/test],methods=[GET]}" onto public java.lang.String com.tirmizee.backend.api.UserApiController.test()
+2020-01-20 21:13:16.155  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-01-20 21:13:16.155  INFO 3136 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-01-20 21:13:16.173  INFO 3136 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-20 21:13:16.174  INFO 3136 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-20 21:13:16.196  INFO 3136 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-20 21:13:16.343  INFO 3136 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-01-20 21:13:16.344  INFO 3136 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-01-20 21:13:16.347  INFO 3136 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-01-20 21:13:16.363  INFO 3136 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8999 (http)
+2020-01-20 21:13:16.365  INFO 3136 --- [           main] com.tirmizee.RunSpringBootHibernate      : Started RunSpringBootHibernate in 5.96 seconds (JVM running for 6.349)
+2020-01-20 21:13:43.254 DEBUG 3136 --- [ool housekeeper] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-01-20 21:14:13.256 DEBUG 3136 --- [ool housekeeper] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-01-20 21:14:43.258 DEBUG 3136 --- [ool housekeeper] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-01-20 21:15:13.259 DEBUG 3136 --- [ool housekeeper] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-01-20 21:15:23.339  INFO 1312 --- [           main] com.tirmizee.RunSpringBootHibernate      : Starting RunSpringBootHibernate on LAPTOP-LCVEMHB7 with PID 1312 (C:\Users\Lenovo-User\eclipse-workspace\Spring-Boot-JPA-Hibernate\target\classes started by Lenovo-User in C:\Users\Lenovo-User\eclipse-workspace\Spring-Boot-JPA-Hibernate)
+2020-01-20 21:15:23.341  INFO 1312 --- [           main] com.tirmizee.RunSpringBootHibernate      : No active profile set, falling back to default profiles: default
+2020-01-20 21:15:23.369  INFO 1312 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e75aa0d: startup date [Mon Jan 20 21:15:23 ICT 2020]; root of context hierarchy
+2020-01-20 21:15:24.146  INFO 1312 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ce43f195] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-20 21:15:24.819  INFO 1312 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8999 (http)
+2020-01-20 21:15:24.841  INFO 1312 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-20 21:15:24.842  INFO 1312 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.40
+2020-01-20 21:15:24.933  INFO 1312 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-20 21:15:24.933  INFO 1312 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1564 ms
+2020-01-20 21:15:25.052  INFO 1312 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-01-20 21:15:25.053  INFO 1312 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2020-01-20 21:15:25.054  INFO 1312 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-01-20 21:15:25.055  INFO 1312 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-01-20 21:15:25.055  INFO 1312 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-01-20 21:15:25.055  INFO 1312 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-01-20 21:15:25.241 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : TirmizeePool - configuration:
+2020-01-20 21:15:25.243 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : allowPoolSuspension.............false
+2020-01-20 21:15:25.244 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : autoCommit......................true
+2020-01-20 21:15:25.244 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : catalog.........................null
+2020-01-20 21:15:25.244 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : connectionInitSql...............null
+2020-01-20 21:15:25.244 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : connectionTestQuery.............null
+2020-01-20 21:15:25.244 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : connectionTimeout...............30000
+2020-01-20 21:15:25.244 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : dataSource......................null
+2020-01-20 21:15:25.244 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : dataSourceClassName.............null
+2020-01-20 21:15:25.244 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : dataSourceJNDI..................null
+2020-01-20 21:15:25.245 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : dataSourceProperties............{password=<masked>}
+2020-01-20 21:15:25.245 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : driverClassName................."oracle.jdbc.OracleDriver"
+2020-01-20 21:15:25.245 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : healthCheckProperties...........{}
+2020-01-20 21:15:25.245 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : healthCheckRegistry.............null
+2020-01-20 21:15:25.245 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : idleTimeout.....................600000
+2020-01-20 21:15:25.246 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : initializationFailFast..........true
+2020-01-20 21:15:25.246 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : isolateInternalQueries..........false
+2020-01-20 21:15:25.246 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : jdbc4ConnectionTest.............false
+2020-01-20 21:15:25.246 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : jdbcUrl........................."jdbc:oracle:thin:@172.20.10.4:1521:xe"
+2020-01-20 21:15:25.246 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : leakDetectionThreshold..........0
+2020-01-20 21:15:25.246 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : maxLifetime.....................1800000
+2020-01-20 21:15:25.246 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : maximumPoolSize.................20
+2020-01-20 21:15:25.246 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : metricRegistry..................null
+2020-01-20 21:15:25.246 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : metricsTrackerFactory...........null
+2020-01-20 21:15:25.246 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : minimumIdle.....................10
+2020-01-20 21:15:25.246 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : password........................<masked>
+2020-01-20 21:15:25.246 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : poolName........................"TirmizeePool"
+2020-01-20 21:15:25.246 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : readOnly........................false
+2020-01-20 21:15:25.247 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : registerMbeans..................false
+2020-01-20 21:15:25.247 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : scheduledExecutorService........null
+2020-01-20 21:15:25.247 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : threadFactory...................null
+2020-01-20 21:15:25.247 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : transactionIsolation............null
+2020-01-20 21:15:25.247 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : username........................"C##ORGANIZATION"
+2020-01-20 21:15:25.247 DEBUG 1312 --- [           main] com.zaxxer.hikari.HikariConfig           : validationTimeout...............5000
+2020-01-20 21:15:25.247  INFO 1312 --- [           main] com.zaxxer.hikari.HikariDataSource       : TirmizeePool - Started.
+2020-01-20 21:15:26.058 DEBUG 1312 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@18c475d6
+2020-01-20 21:15:26.105  INFO 1312 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-01-20 21:15:26.118  INFO 1312 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-01-20 21:15:26.140 DEBUG 1312 --- [ool housekeeper] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Pool stats (total=1, active=0, idle=1, waiting=0)
+2020-01-20 21:15:26.167 DEBUG 1312 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@39bebfc5
+2020-01-20 21:15:26.171  INFO 1312 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-01-20 21:15:26.172  INFO 1312 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-01-20 21:15:26.173  INFO 1312 --- [           main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-01-20 21:15:26.198 DEBUG 1312 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@2b5a6347
+2020-01-20 21:15:26.209  INFO 1312 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-01-20 21:15:26.228 DEBUG 1312 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@5ffab4ee
+2020-01-20 21:15:26.257 DEBUG 1312 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@14506bd1
+2020-01-20 21:15:26.286 DEBUG 1312 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@35f23bd0
+2020-01-20 21:15:26.311 DEBUG 1312 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@3d44fe5
+2020-01-20 21:15:26.336 DEBUG 1312 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@4c532551
+2020-01-20 21:15:26.361 DEBUG 1312 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@e0a9ae2
+2020-01-20 21:15:26.387 DEBUG 1312 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@58b21b1b
+2020-01-20 21:15:26.387 DEBUG 1312 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - After adding stats (total=10, active=0, idle=10, waiting=0)
+2020-01-20 21:15:28.062  INFO 1312 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: com.tirmizee.core.hibernate.dialect.OracleDialect
+2020-01-20 21:15:28.359  WARN 1312 --- [           main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-01-20 21:15:28.361  WARN 1312 --- [           main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-01-20 21:15:28.472  INFO 1312 --- [           main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.tirmizee.core.entities.DemoProduct (class must be instantiated by Interceptor)
+2020-01-20 21:15:28.630  WARN 1312 --- [           main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: com.tirmizee.core.hibernate.dialect.OracleDialect does not support identity key generation
+2020-01-20 21:15:28.630  INFO 1312 --- [           main] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Close initiated...
+2020-01-20 21:15:28.630 DEBUG 1312 --- [           main] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Before closing stats (total=10, active=0, idle=10, waiting=0)
+2020-01-20 21:15:28.631 DEBUG 1312 --- [nnection closer] com.zaxxer.hikari.pool.PoolBase          : TirmizeePool - Closing connection oracle.jdbc.driver.T4CConnection@18c475d6: (connection evicted)
+2020-01-20 21:15:28.633 DEBUG 1312 --- [nnection closer] com.zaxxer.hikari.pool.PoolBase          : TirmizeePool - Closing connection oracle.jdbc.driver.T4CConnection@39bebfc5: (connection evicted)
+2020-01-20 21:15:28.634 DEBUG 1312 --- [nnection closer] com.zaxxer.hikari.pool.PoolBase          : TirmizeePool - Closing connection oracle.jdbc.driver.T4CConnection@2b5a6347: (connection evicted)
+2020-01-20 21:15:28.635 DEBUG 1312 --- [nnection closer] com.zaxxer.hikari.pool.PoolBase          : TirmizeePool - Closing connection oracle.jdbc.driver.T4CConnection@5ffab4ee: (connection evicted)
+2020-01-20 21:15:28.636 DEBUG 1312 --- [nnection closer] com.zaxxer.hikari.pool.PoolBase          : TirmizeePool - Closing connection oracle.jdbc.driver.T4CConnection@14506bd1: (connection evicted)
+2020-01-20 21:15:28.638 DEBUG 1312 --- [nnection closer] com.zaxxer.hikari.pool.PoolBase          : TirmizeePool - Closing connection oracle.jdbc.driver.T4CConnection@35f23bd0: (connection evicted)
+2020-01-20 21:15:28.639 DEBUG 1312 --- [nnection closer] com.zaxxer.hikari.pool.PoolBase          : TirmizeePool - Closing connection oracle.jdbc.driver.T4CConnection@3d44fe5: (connection evicted)
+2020-01-20 21:15:28.641 DEBUG 1312 --- [nnection closer] com.zaxxer.hikari.pool.PoolBase          : TirmizeePool - Closing connection oracle.jdbc.driver.T4CConnection@4c532551: (connection evicted)
+2020-01-20 21:15:28.643 DEBUG 1312 --- [nnection closer] com.zaxxer.hikari.pool.PoolBase          : TirmizeePool - Closing connection oracle.jdbc.driver.T4CConnection@e0a9ae2: (connection evicted)
+2020-01-20 21:15:28.645 DEBUG 1312 --- [nnection closer] com.zaxxer.hikari.pool.PoolBase          : TirmizeePool - Closing connection oracle.jdbc.driver.T4CConnection@58b21b1b: (connection evicted)
+2020-01-20 21:15:28.647 DEBUG 1312 --- [           main] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - After closing stats (total=0, active=0, idle=0, waiting=0)
+2020-01-20 21:15:28.647  INFO 1312 --- [           main] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Closed.
+2020-01-20 21:15:28.649  INFO 1312 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-01-20 21:15:28.659  INFO 1312 --- [           main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020-01-20 21:15:28.664 ERROR 1312 --- [           main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: com.tirmizee.core.hibernate.dialect.OracleDialect does not support identity key generation
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1630)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1082)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:124)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.tirmizee.RunSpringBootHibernate.main(RunSpringBootHibernate.java:10)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: com.tirmizee.core.hibernate.dialect.OracleDialect does not support identity key generation
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:371)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1688)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1626)
+	... 16 common frames omitted
+Caused by: org.hibernate.MappingException: com.tirmizee.core.hibernate.dialect.OracleDialect does not support identity key generation
+	at org.hibernate.dialect.Dialect.getIdentityColumnString(Dialect.java:895)
+	at org.hibernate.dialect.Dialect.getIdentityColumnString(Dialect.java:882)
+	at org.hibernate.dialect.identity.IdentityColumnSupportImpl.getIdentityColumnString(IdentityColumnSupportImpl.java:50)
+	at org.hibernate.tool.schema.internal.StandardTableExporter.getSqlCreateStrings(StandardTableExporter.java:93)
+	at org.hibernate.tool.schema.internal.StandardTableExporter.getSqlCreateStrings(StandardTableExporter.java:30)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:230)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:128)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.<init>(SchemaExport.java:199)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.<init>(SchemaExport.java:140)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:467)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:360)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:384)
+	... 20 common frames omitted
+
+2020-01-20 21:17:31.868  INFO 596 --- [           main] com.tirmizee.RunSpringBootHibernate      : Starting RunSpringBootHibernate on LAPTOP-LCVEMHB7 with PID 596 (C:\Users\Lenovo-User\eclipse-workspace\Spring-Boot-JPA-Hibernate\target\classes started by Lenovo-User in C:\Users\Lenovo-User\eclipse-workspace\Spring-Boot-JPA-Hibernate)
+2020-01-20 21:17:31.873  INFO 596 --- [           main] com.tirmizee.RunSpringBootHibernate      : No active profile set, falling back to default profiles: default
+2020-01-20 21:17:31.901  INFO 596 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e75aa0d: startup date [Mon Jan 20 21:17:31 ICT 2020]; root of context hierarchy
+2020-01-20 21:17:32.666  INFO 596 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a51786ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-20 21:17:33.356  INFO 596 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8999 (http)
+2020-01-20 21:17:33.379  INFO 596 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-20 21:17:33.379  INFO 596 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.40
+2020-01-20 21:17:33.477  INFO 596 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-20 21:17:33.478  INFO 596 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1578 ms
+2020-01-20 21:17:33.593  INFO 596 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-01-20 21:17:33.594  INFO 596 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2020-01-20 21:17:33.595  INFO 596 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-01-20 21:17:33.596  INFO 596 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-01-20 21:17:33.596  INFO 596 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-01-20 21:17:33.596  INFO 596 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-01-20 21:17:33.780 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : TirmizeePool - configuration:
+2020-01-20 21:17:33.783 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : allowPoolSuspension.............false
+2020-01-20 21:17:33.783 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : autoCommit......................true
+2020-01-20 21:17:33.783 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : catalog.........................null
+2020-01-20 21:17:33.783 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : connectionInitSql...............null
+2020-01-20 21:17:33.783 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : connectionTestQuery.............null
+2020-01-20 21:17:33.783 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : connectionTimeout...............30000
+2020-01-20 21:17:33.783 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : dataSource......................null
+2020-01-20 21:17:33.783 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : dataSourceClassName.............null
+2020-01-20 21:17:33.783 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : dataSourceJNDI..................null
+2020-01-20 21:17:33.784 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : dataSourceProperties............{password=<masked>}
+2020-01-20 21:17:33.784 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : driverClassName................."oracle.jdbc.OracleDriver"
+2020-01-20 21:17:33.784 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : healthCheckProperties...........{}
+2020-01-20 21:17:33.785 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : healthCheckRegistry.............null
+2020-01-20 21:17:33.785 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : idleTimeout.....................600000
+2020-01-20 21:17:33.785 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : initializationFailFast..........true
+2020-01-20 21:17:33.785 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : isolateInternalQueries..........false
+2020-01-20 21:17:33.785 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : jdbc4ConnectionTest.............false
+2020-01-20 21:17:33.785 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : jdbcUrl........................."jdbc:oracle:thin:@172.20.10.4:1521:xe"
+2020-01-20 21:17:33.785 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : leakDetectionThreshold..........0
+2020-01-20 21:17:33.785 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : maxLifetime.....................1800000
+2020-01-20 21:17:33.786 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : maximumPoolSize.................20
+2020-01-20 21:17:33.786 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : metricRegistry..................null
+2020-01-20 21:17:33.786 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : metricsTrackerFactory...........null
+2020-01-20 21:17:33.786 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : minimumIdle.....................10
+2020-01-20 21:17:33.786 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : password........................<masked>
+2020-01-20 21:17:33.786 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : poolName........................"TirmizeePool"
+2020-01-20 21:17:33.786 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : readOnly........................false
+2020-01-20 21:17:33.786 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : registerMbeans..................false
+2020-01-20 21:17:33.786 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : scheduledExecutorService........null
+2020-01-20 21:17:33.786 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : threadFactory...................null
+2020-01-20 21:17:33.786 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : transactionIsolation............null
+2020-01-20 21:17:33.786 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : username........................"C##ORGANIZATION"
+2020-01-20 21:17:33.786 DEBUG 596 --- [           main] com.zaxxer.hikari.HikariConfig           : validationTimeout...............5000
+2020-01-20 21:17:33.786  INFO 596 --- [           main] com.zaxxer.hikari.HikariDataSource       : TirmizeePool - Started.
+2020-01-20 21:17:34.545 DEBUG 596 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@7e322c45
+2020-01-20 21:17:34.572 DEBUG 596 --- [ool housekeeper] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Pool stats (total=1, active=0, idle=1, waiting=0)
+2020-01-20 21:17:34.593  INFO 596 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-01-20 21:17:34.605 DEBUG 596 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@408283cb
+2020-01-20 21:17:34.608  INFO 596 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-01-20 21:17:34.640 DEBUG 596 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@104e7446
+2020-01-20 21:17:34.666  INFO 596 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-01-20 21:17:34.667  INFO 596 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-01-20 21:17:34.668  INFO 596 --- [           main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-01-20 21:17:34.670 DEBUG 596 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@6caf6c46
+2020-01-20 21:17:34.697 DEBUG 596 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@73117c8e
+2020-01-20 21:17:34.707  INFO 596 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-01-20 21:17:34.726 DEBUG 596 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@7b89699
+2020-01-20 21:17:34.757 DEBUG 596 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@4b535808
+2020-01-20 21:17:34.782 DEBUG 596 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@2bec7fc5
+2020-01-20 21:17:34.806 DEBUG 596 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@29446755
+2020-01-20 21:17:34.830 DEBUG 596 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@b28863c
+2020-01-20 21:17:34.830 DEBUG 596 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - After adding stats (total=10, active=0, idle=10, waiting=0)
+2020-01-20 21:17:35.757  WARN 596 --- [           main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata : Unable to resolve name [com.tirmizee.core.hibernate.dialect.Oracle12cDialect] as strategy [org.hibernate.dialect.Dialect]
+2020-01-20 21:17:35.759  WARN 596 --- [           main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2020-01-20 21:17:35.759  INFO 596 --- [           main] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Close initiated...
+2020-01-20 21:17:35.759 DEBUG 596 --- [           main] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Before closing stats (total=10, active=0, idle=10, waiting=0)
+2020-01-20 21:17:35.760 DEBUG 596 --- [nnection closer] com.zaxxer.hikari.pool.PoolBase          : TirmizeePool - Closing connection oracle.jdbc.driver.T4CConnection@7e322c45: (connection evicted)
+2020-01-20 21:17:35.761 DEBUG 596 --- [nnection closer] com.zaxxer.hikari.pool.PoolBase          : TirmizeePool - Closing connection oracle.jdbc.driver.T4CConnection@408283cb: (connection evicted)
+2020-01-20 21:17:35.762 DEBUG 596 --- [nnection closer] com.zaxxer.hikari.pool.PoolBase          : TirmizeePool - Closing connection oracle.jdbc.driver.T4CConnection@104e7446: (connection evicted)
+2020-01-20 21:17:35.762 DEBUG 596 --- [nnection closer] com.zaxxer.hikari.pool.PoolBase          : TirmizeePool - Closing connection oracle.jdbc.driver.T4CConnection@6caf6c46: (connection evicted)
+2020-01-20 21:17:35.763 DEBUG 596 --- [nnection closer] com.zaxxer.hikari.pool.PoolBase          : TirmizeePool - Closing connection oracle.jdbc.driver.T4CConnection@73117c8e: (connection evicted)
+2020-01-20 21:17:35.765 DEBUG 596 --- [nnection closer] com.zaxxer.hikari.pool.PoolBase          : TirmizeePool - Closing connection oracle.jdbc.driver.T4CConnection@7b89699: (connection evicted)
+2020-01-20 21:17:35.766 DEBUG 596 --- [nnection closer] com.zaxxer.hikari.pool.PoolBase          : TirmizeePool - Closing connection oracle.jdbc.driver.T4CConnection@4b535808: (connection evicted)
+2020-01-20 21:17:35.767 DEBUG 596 --- [nnection closer] com.zaxxer.hikari.pool.PoolBase          : TirmizeePool - Closing connection oracle.jdbc.driver.T4CConnection@2bec7fc5: (connection evicted)
+2020-01-20 21:17:35.769 DEBUG 596 --- [nnection closer] com.zaxxer.hikari.pool.PoolBase          : TirmizeePool - Closing connection oracle.jdbc.driver.T4CConnection@29446755: (connection evicted)
+2020-01-20 21:17:35.770 DEBUG 596 --- [nnection closer] com.zaxxer.hikari.pool.PoolBase          : TirmizeePool - Closing connection oracle.jdbc.driver.T4CConnection@b28863c: (connection evicted)
+2020-01-20 21:17:35.771 DEBUG 596 --- [           main] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - After closing stats (total=0, active=0, idle=0, waiting=0)
+2020-01-20 21:17:35.772  INFO 596 --- [           main] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Closed.
+2020-01-20 21:17:35.773  INFO 596 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-01-20 21:17:35.784  INFO 596 --- [           main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2020-01-20 21:17:35.788 ERROR 596 --- [           main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1630)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1082)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:124)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.tirmizee.RunSpringBootHibernate.main(RunSpringBootHibernate.java:11)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:264)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:228)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+	at org.hibernate.engine.jdbc.internal.JdbcServicesImpl.configure(JdbcServicesImpl.java:51)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.configureService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:207)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.handleTypes(MetadataBuildingProcess.java:352)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:111)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:847)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:874)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:360)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:384)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:371)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1688)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1626)
+	... 16 common frames omitted
+Caused by: org.hibernate.boot.registry.selector.spi.StrategySelectionException: Unable to resolve name [com.tirmizee.core.hibernate.dialect.Oracle12cDialect] as strategy [org.hibernate.dialect.Dialect]
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.selectStrategyImplementor(StrategySelectorImpl.java:113)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveDefaultableStrategy(StrategySelectorImpl.java:162)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveDefaultableStrategy(StrategySelectorImpl.java:126)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveStrategy(StrategySelectorImpl.java:120)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.constructDialect(DialectFactoryImpl.java:74)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:51)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:137)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:88)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:254)
+	... 33 common frames omitted
+
+2020-01-20 21:18:35.819  INFO 16852 --- [           main] com.tirmizee.RunSpringBootHibernate      : Starting RunSpringBootHibernate on LAPTOP-LCVEMHB7 with PID 16852 (C:\Users\Lenovo-User\eclipse-workspace\Spring-Boot-JPA-Hibernate\target\classes started by Lenovo-User in C:\Users\Lenovo-User\eclipse-workspace\Spring-Boot-JPA-Hibernate)
+2020-01-20 21:18:35.823  INFO 16852 --- [           main] com.tirmizee.RunSpringBootHibernate      : No active profile set, falling back to default profiles: default
+2020-01-20 21:18:35.850  INFO 16852 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e75aa0d: startup date [Mon Jan 20 21:18:35 ICT 2020]; root of context hierarchy
+2020-01-20 21:18:36.642  INFO 16852 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6b3dc14f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-20 21:18:37.029  INFO 16852 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8999 (http)
+2020-01-20 21:18:37.051  INFO 16852 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-20 21:18:37.051  INFO 16852 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.40
+2020-01-20 21:18:37.150  INFO 16852 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-20 21:18:37.151  INFO 16852 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1301 ms
+2020-01-20 21:18:37.285  INFO 16852 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-01-20 21:18:37.286  INFO 16852 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2020-01-20 21:18:37.288  INFO 16852 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-01-20 21:18:37.288  INFO 16852 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-01-20 21:18:37.288  INFO 16852 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-01-20 21:18:37.289  INFO 16852 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-01-20 21:18:37.481 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : TirmizeePool - configuration:
+2020-01-20 21:18:37.484 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : allowPoolSuspension.............false
+2020-01-20 21:18:37.484 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : autoCommit......................true
+2020-01-20 21:18:37.484 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : catalog.........................null
+2020-01-20 21:18:37.484 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : connectionInitSql...............null
+2020-01-20 21:18:37.484 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : connectionTestQuery.............null
+2020-01-20 21:18:37.492 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : connectionTimeout...............30000
+2020-01-20 21:18:37.492 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : dataSource......................null
+2020-01-20 21:18:37.492 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : dataSourceClassName.............null
+2020-01-20 21:18:37.492 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : dataSourceJNDI..................null
+2020-01-20 21:18:37.493 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : dataSourceProperties............{password=<masked>}
+2020-01-20 21:18:37.493 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : driverClassName................."oracle.jdbc.OracleDriver"
+2020-01-20 21:18:37.493 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : healthCheckProperties...........{}
+2020-01-20 21:18:37.493 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : healthCheckRegistry.............null
+2020-01-20 21:18:37.493 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : idleTimeout.....................600000
+2020-01-20 21:18:37.493 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : initializationFailFast..........true
+2020-01-20 21:18:37.493 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : isolateInternalQueries..........false
+2020-01-20 21:18:37.493 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : jdbc4ConnectionTest.............false
+2020-01-20 21:18:37.493 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : jdbcUrl........................."jdbc:oracle:thin:@172.20.10.4:1521:xe"
+2020-01-20 21:18:37.493 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : leakDetectionThreshold..........0
+2020-01-20 21:18:37.493 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : maxLifetime.....................1800000
+2020-01-20 21:18:37.493 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : maximumPoolSize.................20
+2020-01-20 21:18:37.494 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : metricRegistry..................null
+2020-01-20 21:18:37.494 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : metricsTrackerFactory...........null
+2020-01-20 21:18:37.494 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : minimumIdle.....................10
+2020-01-20 21:18:37.494 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : password........................<masked>
+2020-01-20 21:18:37.494 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : poolName........................"TirmizeePool"
+2020-01-20 21:18:37.494 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : readOnly........................false
+2020-01-20 21:18:37.494 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : registerMbeans..................false
+2020-01-20 21:18:37.494 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : scheduledExecutorService........null
+2020-01-20 21:18:37.495 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : threadFactory...................null
+2020-01-20 21:18:37.495 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : transactionIsolation............null
+2020-01-20 21:18:37.495 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : username........................"C##ORGANIZATION"
+2020-01-20 21:18:37.495 DEBUG 16852 --- [           main] com.zaxxer.hikari.HikariConfig           : validationTimeout...............5000
+2020-01-20 21:18:37.495  INFO 16852 --- [           main] com.zaxxer.hikari.HikariDataSource       : TirmizeePool - Started.
+2020-01-20 21:18:38.261 DEBUG 16852 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@62cf92b3
+2020-01-20 21:18:38.310  INFO 16852 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-01-20 21:18:38.324  INFO 16852 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-01-20 21:18:38.340 DEBUG 16852 --- [ool housekeeper] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Pool stats (total=1, active=0, idle=1, waiting=0)
+2020-01-20 21:18:38.371 DEBUG 16852 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@6f11bd9e
+2020-01-20 21:18:38.385  INFO 16852 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-01-20 21:18:38.386  INFO 16852 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-01-20 21:18:38.387  INFO 16852 --- [           main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-01-20 21:18:38.406 DEBUG 16852 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@3052c3cd
+2020-01-20 21:18:38.422  INFO 16852 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-01-20 21:18:38.440 DEBUG 16852 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@4714e582
+2020-01-20 21:18:38.468 DEBUG 16852 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@3a9608d2
+2020-01-20 21:18:38.495 DEBUG 16852 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@f082871
+2020-01-20 21:18:38.521 DEBUG 16852 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@511234
+2020-01-20 21:18:38.546 DEBUG 16852 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@7b7621a8
+2020-01-20 21:18:38.572 DEBUG 16852 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@1d1fb3cb
+2020-01-20 21:18:38.604 DEBUG 16852 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Added connection oracle.jdbc.driver.T4CConnection@58967e70
+2020-01-20 21:18:38.604 DEBUG 16852 --- [onnection adder] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - After adding stats (total=10, active=0, idle=10, waiting=0)
+2020-01-20 21:18:39.564  INFO 16852 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2020-01-20 21:18:39.739  INFO 16852 --- [           main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [byte[]] overrides previous : org.hibernate.type.BinaryType@7e34b127
+2020-01-20 21:18:39.739  INFO 16852 --- [           main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [[B] overrides previous : org.hibernate.type.BinaryType@7e34b127
+2020-01-20 21:18:39.740  INFO 16852 --- [           main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [Byte[]] overrides previous : org.hibernate.type.WrapperBinaryType@1e5eb20a
+2020-01-20 21:18:39.740  INFO 16852 --- [           main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [[Ljava.lang.Byte;] overrides previous : org.hibernate.type.WrapperBinaryType@1e5eb20a
+2020-01-20 21:18:39.893  WARN 16852 --- [           main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-01-20 21:18:39.895  WARN 16852 --- [           main] org.hibernate.orm.deprecation            : HHH90000014: Found use of deprecated [org.hibernate.id.SequenceHiLoGenerator] sequence-based id generator; use org.hibernate.id.enhanced.SequenceStyleGenerator instead.  See Hibernate Domain Model Mapping Guide for details.
+2020-01-20 21:18:40.018  INFO 16852 --- [           main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.tirmizee.core.entities.DemoProduct (class must be instantiated by Interceptor)
+2020-01-20 21:18:40.151  INFO 16852 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2020-01-20 21:18:40.154 DEBUG 16852 --- [           main] org.hibernate.SQL                        : 
+    drop table demo_member_detail cascade constraints
+2020-01-20 21:18:40.489 ERROR 16852 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop table demo_member_detail cascade constraints
+2020-01-20 21:18:40.490 ERROR 16852 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : ORA-00942: table or view does not exist
+
+2020-01-20 21:18:40.490 DEBUG 16852 --- [           main] org.hibernate.SQL                        : 
+    drop table demo_order cascade constraints
+2020-01-20 21:18:40.493 ERROR 16852 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop table demo_order cascade constraints
+2020-01-20 21:18:40.493 ERROR 16852 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : ORA-00942: table or view does not exist
+
+2020-01-20 21:18:40.493 DEBUG 16852 --- [           main] org.hibernate.SQL                        : 
+    drop table demo_product cascade constraints
+2020-01-20 21:18:40.496 ERROR 16852 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop table demo_product cascade constraints
+2020-01-20 21:18:40.496 ERROR 16852 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : ORA-00942: table or view does not exist
+
+2020-01-20 21:18:40.497 DEBUG 16852 --- [           main] org.hibernate.SQL                        : 
+    drop table demo_user cascade constraints
+2020-01-20 21:18:40.500 ERROR 16852 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop table demo_user cascade constraints
+2020-01-20 21:18:40.500 ERROR 16852 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : ORA-00942: table or view does not exist
+
+2020-01-20 21:18:40.500 DEBUG 16852 --- [           main] org.hibernate.SQL                        : 
+    drop table demo_customer cascade constraints
+2020-01-20 21:18:40.503 ERROR 16852 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop table demo_customer cascade constraints
+2020-01-20 21:18:40.503 ERROR 16852 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : ORA-00942: table or view does not exist
+
+2020-01-20 21:18:40.503 DEBUG 16852 --- [           main] org.hibernate.SQL                        : 
+    drop table demo_dept cascade constraints
+2020-01-20 21:18:40.505 ERROR 16852 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop table demo_dept cascade constraints
+2020-01-20 21:18:40.506 ERROR 16852 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : ORA-00942: table or view does not exist
+
+2020-01-20 21:18:40.506 DEBUG 16852 --- [           main] org.hibernate.SQL                        : 
+    drop table demo_member cascade constraints
+2020-01-20 21:18:40.509 ERROR 16852 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop table demo_member cascade constraints
+2020-01-20 21:18:40.509 ERROR 16852 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : ORA-00942: table or view does not exist
+
+2020-01-20 21:18:40.509 DEBUG 16852 --- [           main] org.hibernate.SQL                        : 
+    drop table demo_order_item cascade constraints
+2020-01-20 21:18:40.512 ERROR 16852 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop table demo_order_item cascade constraints
+2020-01-20 21:18:40.512 ERROR 16852 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : ORA-00942: table or view does not exist
+
+2020-01-20 21:18:40.512 DEBUG 16852 --- [           main] org.hibernate.SQL                        : 
+    drop sequence demo_member_detail_seq
+2020-01-20 21:18:40.544 ERROR 16852 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence demo_member_detail_seq
+2020-01-20 21:18:40.544 ERROR 16852 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : ORA-02289: sequence does not exist
+
+2020-01-20 21:18:40.544 DEBUG 16852 --- [           main] org.hibernate.SQL                        : 
+    drop sequence demo_ord_seq
+2020-01-20 21:18:40.546 ERROR 16852 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000389: Unsuccessful: drop sequence demo_ord_seq
+2020-01-20 21:18:40.546 ERROR 16852 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : ORA-02289: sequence does not exist
+
+2020-01-20 21:18:40.546 DEBUG 16852 --- [           main] org.hibernate.SQL                        : 
+    create sequence demo_member_detail_seq start with 1 increment by 1
+2020-01-20 21:18:40.784 DEBUG 16852 --- [           main] org.hibernate.SQL                        : 
+    create sequence demo_ord_seq start with 1 increment by 1
+2020-01-20 21:18:40.788 DEBUG 16852 --- [           main] org.hibernate.SQL                        : 
+    create table demo_member_detail (
+        id number(19,0) not null,
+        create_date date,
+        email varchar2(255 char),
+        fname varchar2(255 char),
+        lname varchar2(255 char),
+        update_date timestamp,
+        primary key (id)
+    )
+2020-01-20 21:18:41.109 DEBUG 16852 --- [           main] org.hibernate.SQL                        : 
+    create table demo_order (
+        order_id number(10,0) not null,
+        order_timestamp date,
+        order_total number(19,2),
+        customer_id number(10,0),
+        user_id number(10,0),
+        primary key (order_id)
+    )
+2020-01-20 21:18:41.125 DEBUG 16852 --- [           main] org.hibernate.SQL                        : 
+    create table demo_product (
+        product_id number(19,0) generated as identity,
+        category varchar2(255 char),
+        filename varchar2(255 char),
+        image_last_update date,
+        list_price number(19,2),
+        mimetype varchar2(255 char),
+        product_avail varchar2(255 char),
+        product_description varchar2(255 char),
+        product_image blob,
+        product_name varchar2(255 char),
+        primary key (product_id)
+    )
+2020-01-20 21:18:41.172 DEBUG 16852 --- [           main] org.hibernate.SQL                        : 
+    create table demo_user (
+        user_id number(10,0) generated as identity,
+        admin_user char(1 char),
+        created_on date,
+        expires_on date,
+        password varchar2(255 char),
+        products char(1 char),
+        quota number(10,0),
+        user_name varchar2(255 char),
+        primary key (user_id)
+    )
+2020-01-20 21:18:41.191 DEBUG 16852 --- [           main] org.hibernate.SQL                        : 
+    create table demo_customer (
+        customer_id number(10,0) generated as identity,
+        credit_limit double precision,
+        cust_city varchar2(255 char),
+        cust_email varchar2(255 char),
+        cust_first_name varchar2(255 char),
+        cust_last_name varchar2(255 char),
+        cust_postal_code varchar2(255 char),
+        cust_state varchar2(255 char),
+        cust_street_address1 varchar2(255 char),
+        cust_street_address2 varchar2(255 char),
+        phone_number1 varchar2(255 char),
+        phone_number2 varchar2(255 char),
+        primary key (customer_id)
+    )
+2020-01-20 21:18:41.199 DEBUG 16852 --- [           main] org.hibernate.SQL                        : 
+    create table demo_dept (
+        deptno number(10,0) not null,
+        dname varchar2(255 char),
+        loc varchar2(255 char),
+        primary key (deptno)
+    )
+2020-01-20 21:18:41.205 DEBUG 16852 --- [           main] org.hibernate.SQL                        : 
+    create table demo_member (
+        member_id number(10,0) generated as identity,
+        active number(1,0),
+        create_date timestamp,
+        member_code varchar2(255 char),
+        member_name varchar2(255 char),
+        recruit_user_id number(10,0),
+        score number(10,0),
+        member_detail_id number(19,0),
+        primary key (member_id)
+    )
+2020-01-20 21:18:41.214 DEBUG 16852 --- [           main] org.hibernate.SQL                        : 
+    create table demo_order_item (
+        order_item_id number(10,0) generated as identity,
+        order_id number(10,0),
+        product_id number(10,0),
+        quantity number(10,0),
+        unit_price number(19,2),
+        primary key (order_item_id)
+    )
+2020-01-20 21:18:41.222 DEBUG 16852 --- [           main] org.hibernate.SQL                        : 
+    alter table demo_order 
+        add constraint FKms5b3xpnxmublhhepnduc5d7 
+        foreign key (customer_id) 
+        references demo_customer
+2020-01-20 21:18:41.507 DEBUG 16852 --- [           main] org.hibernate.SQL                        : 
+    alter table demo_order 
+        add constraint FKgiwtouahhovxkfp8f2ygcyp1r 
+        foreign key (user_id) 
+        references demo_user
+2020-01-20 21:18:41.525 DEBUG 16852 --- [           main] org.hibernate.SQL                        : 
+    alter table demo_member 
+        add constraint FKo6785521n1v9w5wnxfxylyvuf 
+        foreign key (member_detail_id) 
+        references demo_member_detail
+2020-01-20 21:18:41.534 DEBUG 16852 --- [           main] org.hibernate.SQL                        : 
+    alter table demo_member 
+        add constraint FKrwc4xh1dq2oq1eicymj6l0eyt 
+        foreign key (recruit_user_id) 
+        references demo_user
+2020-01-20 21:18:41.540  INFO 16852 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2020-01-20 21:18:41.544  INFO 16852 --- [           main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-01-20 21:18:41.640  INFO 16852 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-20 21:18:41.695  INFO 16852 --- [           main] o.s.c.s.ClassPathXmlApplicationContext   : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@e07b4db: startup date [Mon Jan 20 21:18:41 ICT 2020]; root of context hierarchy
+2020-01-20 21:18:41.697  INFO 16852 --- [           main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [spring-map-query.xml]
+2020-01-20 21:18:41.740  INFO 16852 --- [           main] o.s.c.s.ClassPathXmlApplicationContext   : Closing org.springframework.context.support.ClassPathXmlApplicationContext@e07b4db: startup date [Mon Jan 20 21:18:41 ICT 2020]; root of context hierarchy
+2020-01-20 21:18:41.954  INFO 16852 --- [           main] org.dozer.config.GlobalSettings          : Trying to find Dozer configuration file: dozer.properties
+2020-01-20 21:18:42.080  WARN 16852 --- [           main] org.dozer.config.GlobalSettings          : Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2020-01-20 21:18:42.085  INFO 16852 --- [           main] org.dozer.DozerInitializer               : Initializing Dozer. Version: 5.5.0, Thread Name: main
+2020-01-20 21:18:42.087  INFO 16852 --- [           main] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2020-01-20 21:18:42.088  INFO 16852 --- [           main] org.dozer.jmx.JMXPlatformImpl            : Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2020-01-20 21:18:42.089  INFO 16852 --- [           main] org.dozer.DozerBeanMapper                : Initializing a new instance of dozer bean mapper.
+2020-01-20 21:18:42.406  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e75aa0d: startup date [Mon Jan 20 21:18:35 ICT 2020]; root of context hierarchy
+2020-01-20 21:18:42.464  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/custormer/update],methods=[POST]}" onto public com.tirmizee.backend.dto.CustomerDTO com.tirmizee.backend.api.CustomerApiController.update(com.tirmizee.backend.dto.CustomerDTO)
+2020-01-20 21:18:42.464  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/custormer/delete/{customerId}],methods=[GET]}" onto public com.tirmizee.backend.dto.CustomerDTO com.tirmizee.backend.api.CustomerApiController.update(java.lang.Integer)
+2020-01-20 21:18:42.465  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/custormer/create],methods=[POST]}" onto public com.tirmizee.backend.dto.CustomerDTO com.tirmizee.backend.api.CustomerApiController.create(com.tirmizee.backend.dto.CustomerDTO)
+2020-01-20 21:18:42.465  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/custormer/test],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.CustomerDTO> com.tirmizee.backend.api.CustomerApiController.test()
+2020-01-20 21:18:42.465  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/custormer/sql/all],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.CustomerDTO> com.tirmizee.backend.api.CustomerApiController.sqlAll()
+2020-01-20 21:18:42.465  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/custormer/find/all],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.CustomerDTO> com.tirmizee.backend.api.CustomerApiController.findAll()
+2020-01-20 21:18:42.467  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/update],methods=[POST]}" onto public com.tirmizee.backend.dto.Response<com.tirmizee.backend.dto.DeptDTO> com.tirmizee.backend.api.DeptApiControllor.update(com.tirmizee.backend.dto.DeptDTO)
+2020-01-20 21:18:42.467  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/delete/{deptno}],methods=[GET]}" onto public com.tirmizee.backend.dto.Response<java.lang.Object> com.tirmizee.backend.api.DeptApiControllor.delete(java.lang.Integer)
+2020-01-20 21:18:42.467  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/create],methods=[POST]}" onto public com.tirmizee.backend.dto.Response<com.tirmizee.backend.dto.DeptDTO> com.tirmizee.backend.api.DeptApiControllor.create(com.tirmizee.backend.dto.DeptDTO)
+2020-01-20 21:18:42.467  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/loc/{loc}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.DeptDTO> com.tirmizee.backend.api.DeptApiControllor.all(java.lang.String)
+2020-01-20 21:18:42.468  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/page],methods=[GET]}" onto public org.springframework.data.domain.Page<com.tirmizee.backend.dto.DeptDTO> com.tirmizee.backend.api.DeptApiControllor.page()
+2020-01-20 21:18:42.468  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/dname/{dname}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.DeptDTO> com.tirmizee.backend.api.DeptApiControllor.dname(java.lang.String)
+2020-01-20 21:18:42.468  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/findone/{id}],methods=[GET]}" onto public com.tirmizee.core.entities.DemoDept com.tirmizee.backend.api.DeptApiControllor.findone(java.lang.Integer)
+2020-01-20 21:18:42.468  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/dao/criteria],methods=[POST]}" onto public java.util.List<com.tirmizee.backend.dto.DeptDTO> com.tirmizee.backend.api.DeptApiControllor.dao(com.tirmizee.backend.dto.DeptDTO)
+2020-01-20 21:18:42.468  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/find/sort],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.DeptDTO> com.tirmizee.backend.api.DeptApiControllor.findAndSort()
+2020-01-20 21:18:42.468  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/getone/{id}],methods=[GET]}" onto public com.tirmizee.core.entities.DemoDept com.tirmizee.backend.api.DeptApiControllor.getone(java.lang.Integer)
+2020-01-20 21:18:42.468  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/dept/find/all],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.DeptDTO> com.tirmizee.backend.api.DeptApiControllor.findAll()
+2020-01-20 21:18:42.474  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/create],methods=[POST]}" onto public com.tirmizee.backend.dto.Response<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.create(com.tirmizee.backend.dto.MemberDTO)
+2020-01-20 21:18:42.474  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/get/{memberId}],methods=[GET]}" onto public com.tirmizee.backend.dto.MemberDTO com.tirmizee.backend.api.MemberApiController.getMember(java.lang.Integer)
+2020-01-20 21:18:42.475  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/page],methods=[POST]}" onto public org.springframework.data.domain.Page<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.page(com.tirmizee.backend.dto.MemberDTO)
+2020-01-20 21:18:42.475  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/page/{code}],methods=[GET]}" onto public org.springframework.data.domain.Page<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.page(java.lang.String)
+2020-01-20 21:18:42.475  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/codes/{code}/desc],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberCodeOrderByMemberCodeDesc(java.lang.String)
+2020-01-20 21:18:42.475  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/email/{email}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberDatailEmailContaining(java.lang.String)
+2020-01-20 21:18:42.475  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/page/{page}/{size}],methods=[GET]}" onto public org.springframework.data.domain.Page<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberDatailEmailContaining(int,int)
+2020-01-20 21:18:42.475  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/codesdesc/{code}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberCodeAndScoreIsNotNullOrderBy(java.lang.String)
+2020-01-20 21:18:42.475  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/codeequals/{code}],methods=[GET]}" onto public com.tirmizee.backend.dto.MemberDTO com.tirmizee.backend.api.MemberApiController.getByMemberCodeEquals(java.lang.String)
+2020-01-20 21:18:42.476  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/codeandname/{code}/{name}],methods=[GET]}" onto public com.tirmizee.backend.dto.MemberDTO com.tirmizee.backend.api.MemberApiController.getByMemberCodeAndName(java.lang.String,java.lang.String)
+2020-01-20 21:18:42.476  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/scoreisnull],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByScoreIsNull()
+2020-01-20 21:18:42.476  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/namestartingwith/{name}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberNameStartingWith(java.lang.String)
+2020-01-20 21:18:42.476  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/scoreisnotnull],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByScoreIsNotNull()
+2020-01-20 21:18:42.476  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/scoreless/{score}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByScoreLessThan(java.lang.Integer)
+2020-01-20 21:18:42.476  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/namelike/{name}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberNameLike(java.lang.String)
+2020-01-20 21:18:42.476  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/createdate/between],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberNameLike()
+2020-01-20 21:18:42.476  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/nameendingwith/{name}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberNameEndingWith(java.lang.String)
+2020-01-20 21:18:42.477  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/scoregreater/{score}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByScoreGreaterThan(java.lang.Integer)
+2020-01-20 21:18:42.477  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/codenot/{code}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberCodeNot(java.lang.String)
+2020-01-20 21:18:42.477  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/activefalse],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByActiveFalse()
+2020-01-20 21:18:42.477  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/username/{username}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByDemoUserUserName(java.lang.String)
+2020-01-20 21:18:42.477  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/codeorname/{code}/{name}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberCodeOrName(java.lang.String,java.lang.String)
+2020-01-20 21:18:42.477  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/codeis/{code}],methods=[GET]}" onto public com.tirmizee.backend.dto.MemberDTO com.tirmizee.backend.api.MemberApiController.getByMemberCodeIs(java.lang.String)
+2020-01-20 21:18:42.477  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/delete/{memberId}],methods=[GET]}" onto public com.tirmizee.backend.dto.Response<java.lang.Object> com.tirmizee.backend.api.MemberApiController.deleteMember(java.lang.Integer)
+2020-01-20 21:18:42.477  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/scorein],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByScoreIn()
+2020-01-20 21:18:42.478  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/codes/{code}],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByMemberCode(java.lang.String)
+2020-01-20 21:18:42.478  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/code/{code}],methods=[GET]}" onto public com.tirmizee.backend.dto.MemberDTO com.tirmizee.backend.api.MemberApiController.getByMemberCode(java.lang.String)
+2020-01-20 21:18:42.478  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/findbyuser],methods=[POST]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByUser(com.tirmizee.backend.dto.UserDTO)
+2020-01-20 21:18:42.478  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/activeture],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findByActiveTrue()
+2020-01-20 21:18:42.478  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/member/find/all],methods=[GET]}" onto public java.util.List<com.tirmizee.backend.dto.MemberDTO> com.tirmizee.backend.api.MemberApiController.findAll()
+2020-01-20 21:18:42.478  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/test],methods=[GET]}" onto public java.lang.String com.tirmizee.backend.api.UserApiController.test()
+2020-01-20 21:18:42.479  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-01-20 21:18:42.479  INFO 16852 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-01-20 21:18:42.499  INFO 16852 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-20 21:18:42.499  INFO 16852 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-20 21:18:42.527  INFO 16852 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-01-20 21:18:42.669  INFO 16852 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-01-20 21:18:42.670  INFO 16852 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-01-20 21:18:42.674  INFO 16852 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-01-20 21:18:42.700  INFO 16852 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8999 (http)
+2020-01-20 21:18:42.702  INFO 16852 --- [           main] com.tirmizee.RunSpringBootHibernate      : Started RunSpringBootHibernate in 7.073 seconds (JVM running for 7.449)
+2020-01-20 21:19:08.342 DEBUG 16852 --- [ool housekeeper] com.zaxxer.hikari.pool.HikariPool        : TirmizeePool - Pool stats (total=10, active=0, idle=10, waiting=0)
