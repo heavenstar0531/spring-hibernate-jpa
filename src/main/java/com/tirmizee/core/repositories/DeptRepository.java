@@ -31,4 +31,7 @@ public interface DeptRepository extends BaseRepository<DemoDept, Integer>, Custo
 		countQuery = "SELECT count(*) FROM DEMO_DEPT  ORDER BY ?#{#pageable}")
 	Page<DemoDept> findNativeWithPagination(Pageable pageable);
 	
+	@Query(name = "DEMODEPT.FIND_ALL")
+	List<DemoDept> all();
+	
 }

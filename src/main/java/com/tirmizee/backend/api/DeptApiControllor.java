@@ -47,7 +47,7 @@ public class DeptApiControllor {
 	
 	@GetMapping(value = "/find/all")
 	public List<DeptDTO> findAll() {
-		return DeptMapper.INSTANCE.toListDTO(deptRepository.findAll());
+		return DeptMapper.INSTANCE.toListDTO(deptRepository.all());
 	}
 	
 	@GetMapping(value = "/find/sort")

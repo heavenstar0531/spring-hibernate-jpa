@@ -11,4 +11,8 @@
 		<return alias="l" class="com.tirmizee.core.entities.DemoCustomer"/>
 		<![CDATA[SELECT * FROM DEMO_CUSTOMER WHERE CUST_EMAIL=:EMAIL]]>
 	</sql-query>
+	<sql-query name="DEMODEPT.FIND_ALL">
+		<return alias="l" class="com.tirmizee.core.entities.DemoDept"/>
+		<![CDATA[SELECT * FROM DEMO_CUSTOMER]]>
+	</sql-query>
 </hibernate-mapping>
