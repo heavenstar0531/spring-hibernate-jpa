@@ -28,3 +28,4 @@
 - http://www.masterspringboot.com/configuration/web-server/configuring-tomcat-connection-pool-on-spring-boot
 - https://stackoverflow.com/questions/54126131/server-tomcat-max-threads-vs-corepoolsize-vs-spring-datasource-tomcat-max
 - https://docs.jboss.org/hibernate/orm/4.3/manual/en-US/html/ch03.html#configuration-optional
+- https://thoughts-on-java.org/spring-data-jpa-query-annotation/
