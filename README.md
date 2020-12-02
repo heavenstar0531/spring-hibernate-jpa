@@ -6,6 +6,12 @@
 - MapStruct 
 - Lombok
 
+## Problem
+
+#### How to fix the Hibernate “object references an unsaved transient instance - save the transient instance before flushing” error
+
+- https://stackoverflow.com/questions/2302802/how-to-fix-the-hibernate-object-references-an-unsaved-transient-instance-save
+
 ## Reference
 - https://stackoverflow.com/questions/4573975/jpa-vs-spring-jdbctemplate
 - https://www.journaldev.com/17379/jpa-entitymanager-hibernate
