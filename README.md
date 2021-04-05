@@ -8,6 +8,8 @@
 
 ## Problem
 
+ON DELETE CASCADE เป็นสิ่งที่ระบุฐานข้อมูลโดยจะลบแถว "ลูก" ในฐานข้อมูลเมื่อแถว "พาเรนต์" ถูกลบ
+
 #### How to fix the Hibernate “object references an unsaved transient instance - save the transient instance before flushing” error
 
 - https://stackoverflow.com/questions/2302802/how-to-fix-the-hibernate-object-references-an-unsaved-transient-instance-save
