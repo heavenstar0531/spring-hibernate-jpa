@@ -33,6 +33,7 @@ ON DELETE CASCADE เป็นสิ่งที่ระบุฐานข้�
 - https://blog.indrek.io/articles/externalized-configuration-in-spring-boot/
 - https://www.technicalkeeda.com/spring-tutorials/how-to-keep-sql-queries-outside-java-code-using-spring
 - https://github.com/brettwooldridge/HikariCP/wiki/About-Pool-Sizing
+- https://www.netsurfingzone.com/jpa/onetomany-orphanremoval-true-example-in-hibernate-jpa/
 - http://www.masterspringboot.com/configuration/web-server/configuring-tomcat-connection-pool-on-spring-boot
 - https://stackoverflow.com/questions/54126131/server-tomcat-max-threads-vs-corepoolsize-vs-spring-datasource-tomcat-max
 - https://docs.jboss.org/hibernate/orm/4.3/manual/en-US/html/ch03.html#configuration-optional
